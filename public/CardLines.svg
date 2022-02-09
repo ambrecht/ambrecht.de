@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1 Basic//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11-basic.dtd">
+<svg version="1.1" baseProfile="basic" id="Ebene_1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="640px" height="1000px"
+	 viewBox="0 0 640 1000" xml:space="preserve">
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="636.1426" y1="451.9927" x2="1058.1738" y2="451.9927" gradientTransform="matrix(4.371139e-008 1 -1 4.371139e-008 599.2134 -254.189)">
+	<stop  offset="0.0146" style="stop-color:#634595"/>
+	<stop  offset="1" style="stop-color:#4A87C7"/>
+</linearGradient>
+<path fill="none" stroke="url(#SVGID_1_)" stroke-width="20" stroke-miterlimit="10" d="M284.442,381.953
+	c0,227.56-127.348,412.032-284.442,412.032"/>
+<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="636.1426" y1="380.8804" x2="1264.1875" y2="380.8804" gradientTransform="matrix(4.371139e-008 1 -1 4.371139e-008 599.2134 -254.189)">
+	<stop  offset="0.0146" style="stop-color:#634595"/>
+	<stop  offset="1" style="stop-color:#4A87C7"/>
+</linearGradient>
+<path fill="none" stroke="url(#SVGID_2_)" stroke-width="20" stroke-miterlimit="10" d="M426.666,381.953
+	c0,341.342-191.024,618.046-426.667,618.046"/>
+<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="636.1426" y1="-1488.1216" x2="1058.1748" y2="-1488.1216" gradientTransform="matrix(-4.375628e-008 1 1 4.375628e-008 1980.8999 -254.189)">
+	<stop  offset="0.0146" style="stop-color:#634595"/>
+	<stop  offset="1" style="stop-color:#4A87C7"/>
+</linearGradient>
+<path fill="none" stroke="url(#SVGID_3_)" stroke-width="20" stroke-miterlimit="10" d="M355.558,381.953
+	c0,227.56,127.347,412.032,284.442,412.032"/>
+<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="636.1426" y1="-1559.2334" x2="1264.1885" y2="-1559.2334" gradientTransform="matrix(-4.375628e-008 1 1 4.375628e-008 1980.8999 -254.189)">
+	<stop  offset="0.0146" style="stop-color:#634595"/>
+	<stop  offset="1" style="stop-color:#4A87C7"/>
+</linearGradient>
+<path fill="none" stroke="url(#SVGID_4_)" stroke-width="20" stroke-miterlimit="10" d="M213.333,381.953
+	c0,341.342,191.024,618.046,426.667,618.046"/>
+</svg>
