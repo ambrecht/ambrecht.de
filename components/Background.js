@@ -12,7 +12,7 @@ export default function BackgroundUniverse() {
 
 //STYLE
 const Background = styled.div`
-  position: absolute;
+  position: fixed;
   height: 100vh;
   max-width: 100vw;
   overflow: hidden;

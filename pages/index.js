@@ -15,7 +15,6 @@ export default function Home() {
         <Navigation></Navigation>
         <HeroMessage></HeroMessage>
       </Container>
-      <CardSlider></CardSlider>
     </>
   );
 }

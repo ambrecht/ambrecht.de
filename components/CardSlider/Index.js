@@ -18,9 +18,10 @@ export default function MARKUP() {
 //STYLE
 const STYLE = styled.div`
   box-sizing: border-box;
-  width: 100%;
+  width: 99%;
   justify-content: center;
   display: flex;
   row-gap: 1rem;
-  column-gap: 1rem;
+  column-gap: 0rem;
+  overflow: hidden;
 `;
