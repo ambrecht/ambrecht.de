@@ -14,10 +14,11 @@ export default function BackgroundUniverse() {
 const Background = styled.div`
   position: fixed;
   height: 100vh;
-  max-width: 100vw;
+  max-width: 100%;
   overflow: hidden;
   display: block;
   background-color: black;
+  overflow: hidden;
 
   filter: hue-rotate(333deg);
   cursor: move;

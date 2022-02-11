@@ -22,7 +22,7 @@ const CameraControls = (props) => {
     gl: { domElement },
   } = useThree();
 
-  camera.position.y -= windowScrollY * 0.02;
+  camera.position.y += windowScrollY * 0.05;
   /*   camera.position.y = -THREE.MathUtils.lerp(
     camera.position.y,
     (y * Math.PI) / 10,
@@ -95,7 +95,7 @@ function App(props) {
         <Canvas
           camera={{
             position: [
-              -0.000002885081231817927, 4.999999999997496,
+              0.000002885081231817927, 4.999999999997496,
               0.000004083935454970389,
             ],
           }}

@@ -25,7 +25,7 @@ const Wrapper = styled.span`
     rgba(35, 147, 255, 1) 35%,
     rgba(95, 29, 242, 1) 100%
   );
-  background-clip: text;
+  -webkit-background-clip: text;
   background-size: 100%;
   -webkit-text-fill-color: transparent;
 `;

@@ -6,6 +6,7 @@ import Background from '../components/Background';
 import Rectangel from '../components/Rectangel';
 import Workspace from '../components/InteractiveTable/Index';
 import CardSlider from '../components/CardSlider/Index';
+import SubHero from '../components/SubHero';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Container>
         <Navigation></Navigation>
         <HeroMessage></HeroMessage>
+        <SubHero></SubHero>
       </Container>
     </>
   );
