@@ -1,11 +1,12 @@
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import { Normalize } from 'styled-normalize';
+import { Helmet } from 'react-helmet';
 
 const GlobalStyle = createGlobalStyle`
   :root {
 
 
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;1,100;1,200&display=swap');
+    
     font-family: 'Poppins', sans-serif;
     font-size: calc(1rem + 0.5vw);
     max-width: 88.75rem;
@@ -39,6 +40,17 @@ const theme = {
 export default function App({ Component, pageProps }) {
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Ambrecht.de</title>
+        <link rel="canonical" href="http://mysite.com/example" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;800&display=swap"
+          rel="stylesheet"
+        />
+      </Helmet>
       <Normalize />
       <GlobalStyle />
       <ThemeProvider theme={theme}>
