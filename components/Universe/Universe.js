@@ -11,6 +11,7 @@ import Test from '../../public/Rect.svg';
 extend({ OrbitControls });
 
 const CameraControls = (props) => {
+  const [scroll, setScroll] = useState(0);
   const { x, y } = useMousePosition();
   const [windowScrollX, windowScrollY] = useWindowScrollCoords();
 
@@ -22,36 +23,12 @@ const CameraControls = (props) => {
     gl: { domElement },
   } = useThree();
 
-  camera.position.y += windowScrollY * 0.05;
-  /*   camera.position.y = -THREE.MathUtils.lerp(
-    camera.position.y,
-    (y * Math.PI) / 10,
-    0.1,
-  ); */
+  useEffect(() => {
+    setScroll(windowScrollY / 200000000);
+    console.log(scroll);
+  }, [windowScrollY]);
 
-  camera.position.x = -THREE.MathUtils.lerp(
-    camera.position.x,
-    (x * Math.PI) / 200,
-    0.05,
-  );
-
-  camera.position.y = THREE.MathUtils.lerp(
-    camera.position.y,
-    (y * Math.PI) / 200,
-    0.05,
-  );
-
-  /* camera.position.y = THREE.MathUtils.lerp(
-    camera.position.y,
-    (y * Math.PI) / 10,
-    0.1,
-  ); */
-
-  //camera.position.y = -20;
-
-  //
-
-  //camera.rotation.z = windowScrollY * -0.002;
+  camera.position.y = scroll;
 
   // Ref to the controls, so that we can update them on every frame using useFrame
   const controls = useRef();
@@ -95,7 +72,7 @@ function App(props) {
         <Canvas
           camera={{
             position: [
-              0.000002885081231817927, 4.999999999997496,
+              0.000002885081231817927, 0.000002885081231817927,
               0.000004083935454970389,
             ],
           }}

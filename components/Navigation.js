@@ -15,25 +15,26 @@ const Navigation = () => {
           </a>
         </Link>
       </div>
-      <Link href="/" passHref>
+      <Link href="/about" passHref>
+        <a aria-hidden="true" role="img">
+          <span>Über mich</span>
+        </a>
+      </Link>
+      <Link href="/prozess" passHref>
+        <a aria-hidden="true" role="img">
+          <span>Mein Prozess</span>
+        </a>
+      </Link>
+      <Link href="/arbeit" passHref>
         <a aria-hidden="true" role="img">
           <span>Meine Arbeit</span>
         </a>
       </Link>
-      <Link href="/" passHref>
-        <a aria-hidden="true" role="img">
-          <span>Mein Leben</span>
-        </a>
-      </Link>
-      <Link href="/" passHref>
-        <a aria-hidden="true" role="img">
-          <span>Mein Traum</span>
-        </a>
-      </Link>
+
       <div className="contact-container">
         <Link href="/contact" passHref>
           <a aria-hidden="true">
-            <ContactButton></ContactButton>
+            <ContactButton>kontakt</ContactButton>
           </a>
         </Link>
       </div>

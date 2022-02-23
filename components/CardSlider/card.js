@@ -7,63 +7,70 @@ const LOGIC = () => {};
 //MARKUP
 export default function MARKUP(props) {
   return (
-    <Blure>
-      <Background background={props.bild}>
-        <Card>
-          <Image src={Technologie} alt="Desktop" layout="intrinsic" />
+    <>
+      <Card>
+        <Image
+          src={props.icon}
+          width="100"
+          height="100"
+          alt="Desktop"
+          layout="intrinsic"
+        />
 
-          <Head>Technolgie</Head>
-          <Text>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quam
-            leo, fringilla sit amet diam ac, condimentum tristique nisi. Duis
-            eleifend odio dui, et fermentum augue bibendum nec. Cras id sem at
-            dolor tempor euismod.
-          </Text>
-        </Card>
-      </Background>
-    </Blure>
+        <Head>{props.headline}</Head>
+        <Text>{props.children}</Text>
+      </Card>
+    </>
   );
 }
 
 //STYLE
 
-const Blure = styled.div`
-  width: 32vw;
-  height: 100vh;
-  opacity: 100%;
-  background: hsla(0, 100%, 0%, 0.53);
-  box-shadow: 5px 3px 30px black;
-  overflow: hidden;
-`;
-
-const Background = styled.div`
-  width: 32vw;
-  height: 100vh;
-  background: ${(props) => `url(${props.background}) no-repeat top center`};
-  background-size: cover;
-  opacity: 80%;
-  z-index: -99;
-`;
-
 const Card = styled.div`
-  mix-blend-mode: none;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: baseline;
 
   width: 31vw;
-  height: 100vh;
+  height: 80vh;
+  padding-top: 5rem;
+  background: linear-gradient(
+    45deg,
+    rgba(35, 147, 255, 0.1) 35%,
+    rgba(95, 29, 242, 0.1) 100%
+  );
+  border-radius: 5%;
+  border: 5px solid white;
+  span {
+    padding-top: 3rem;
+  }
 `;
 
 const Head = styled.span`
-  mix-blend-mode: none;
-  color: grey;
+  display: inline;
+  color: white;
   font-size: 2rem;
+  font-weight: 300;
+
+  letter-spacing: 0.01em;
+  word-spacing: -0.2em;
+
+  background-image: linear-gradient(
+    45deg,
+    rgba(35, 147, 255, 1) 35%,
+    rgba(95, 29, 242, 1) 100%
+  );
+  -webkit-background-clip: text;
+  background-size: 100%;
+  -webkit-text-fill-color: transparent;
 `;
 
 const Text = styled.p`
   width: 80%;
   color: white;
+  font-weight: 400;
+  text-align: center;
+
   z-index: 10;
 `;

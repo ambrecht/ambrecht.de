@@ -2,12 +2,12 @@ import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import Typewriter from 'typewriter-effect';
 
-export default function TextAnimation() {
+export default function TextAnimation(props) {
   return (
     <Wrapper>
       <Typewriter
         options={{
-          strings: [`Erlebnis.`, `Erfolg.`, `Abenteuer!`],
+          strings: props.children.split(' '),
           pauseFor: 10000,
           autoStart: true,
           loop: true,
@@ -21,9 +21,9 @@ export default function TextAnimation() {
 const Wrapper = styled.span`
   display: inline-block;
   background-image: linear-gradient(
-    45deg,
-    rgba(35, 147, 255, 1) 35%,
-    rgba(95, 29, 242, 1) 100%
+    72.61deg,
+    rgba(35, 147, 255, 1) 22.63%,
+    rgba(95, 29, 242, 1) 84.67%
   );
   -webkit-background-clip: text;
   background-size: 100%;

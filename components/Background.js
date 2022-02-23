@@ -19,6 +19,7 @@ const Background = styled.div`
   display: block;
   background-color: black;
   overflow: hidden;
+  z-index: -1000;
 
   filter: hue-rotate(333deg);
   cursor: move;

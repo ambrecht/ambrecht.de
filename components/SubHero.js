@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import Image from 'next/image';
 import Ich from '../public/ich.png';
 import Unterschrift from '../public/unterschrift.png';
+import Quote from './Quote';
 
 //LOGIC
 const LOGIC = () => {};
@@ -16,21 +17,41 @@ export default function MARKUP() {
             className="Tino Ambrecht"
             src={Ich}
             alt="Picture of a computer"
-            width={500}
-            height={500}
+            width={700}
+            height={700}
             objectFit="cover"
           ></Image>
         </StyledImage>
 
         <Text>
-          Ihre <h1>externe Quelle für Innovation und Kreativität</h1>. Ich helfe
-          Ihnen Lösungen zu entwickeln welche das Leben Ihrer Kunden verbessern.
+          Mein Name ist <h1>Tino Ambrecht</h1>, in einer Welt, die vor allem von
+          Spezialisten dominiert wird, hat es mich einige Zeit gekostet zu
+          erkennen, dass ich ein Generalist bin und das dies gleichzeitig meine
+          größte Stärke ist. Als Generalist brenne nicht für ein bestimmtes
+          Thema, ich bin an vielen Dingen interessiert, ich beschäftige mich
+          zeitweise sehr intensiv mit einem spezifischen Fachgebiet, solange bis
+          ich die grundlegenden Prinzipien verstanden habe. Dann verknüpfe ich
+          dieses Wissen mit den Erkenntnissen aus anderen Bereichen und erhalte
+          so Stück für Stück ein Bild vom großen und Ganzen. Ihre
         </Text>
-
+        <Quote autor="Fariduddin Attar - Die Konferenz der Vögel">
+          Das Schicksalsrad will, dass Er dieses Geheimnis aufdeckt. Wer sonst
+          könnte das durch Umherirren? Was ist das Schicksal, außer Suchen?
+          Woher soll jemand wissen, was hinter dem Vorhang ist? Selbst wer
+          einige Jahre gesucht hat, ist unfähig um diese Tür gekreist.
+        </Quote>
         <Text>
-          Am Ende eines Projekts zählen nicht die technischen Details, nicht die
-          objektiv messbaren Kriterien, sondern es zählt unseren Nutzer zu
-          beigstern und ein <h1>positives Mehrwerterlebnis</h1> zu schaffen.
+          Bei meiner Arbeit im Team gelte ich als
+          <h1> strategischer und intuitiver Denker</h1> als
+          <h1>Geheimnissucher</h1>. Ich erforsche Ideen und gehe den Dingen auf
+          den Grund. Es macht mir Spaß, gemeinsam einen Plan zu formulieren und
+          Lösungen für komplexe Probleme zu entwickeln. Mein selbstreflektierter
+          Charakter hilft mir dabei, mich in den Nutzer einzufühlen und den
+          Sachverhalt aus verschiedenen Blickwinkeln zu betrachten. Ich habe
+          außerdem einen ausgesprochnen <h1>Sinn für Ästhetik</h1>
+          für mich ist die Schönheit ein Hinweis auf die Wahrheit, denn die
+          Ordnung, die die Schönheit darstellt, ist eine Bestätigung für die
+          objektive Richtigkeit einer Idee.
         </Text>
         <StyledImage>
           <Image
@@ -53,9 +74,7 @@ const META = styled.div`
   justify-content: center;
 `;
 const Container = styled.div`
-  padding: 5% 0px 5% 0px;
-  margin-top: 10%;
-  border-top: 5px solid white;
+  padding: 0% 0px 5% 0px;
   border-bottom: 5px solid white;
   margin-bottom: 10%;
 `;
@@ -97,12 +116,11 @@ const Text = styled.span`
   display: block;
   margin-top: 1rem;
   color: white;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 300;
   text-align: justify;
 
   letter-spacing: 0.01em;
-  word-spacing: -0.2em;
 
   h1 {
     display: inline;
@@ -111,7 +129,6 @@ const Text = styled.span`
     font-weight: 300;
 
     letter-spacing: 0.01em;
-    word-spacing: -0.2em;
 
     background-image: linear-gradient(
       45deg,

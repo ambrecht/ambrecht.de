@@ -3,11 +3,11 @@ import styled from 'styled-components';
 //LOGIC
 
 //MARKUP
-export default function ContactButton() {
+export default function ContactButton({ children }) {
   return (
     <Button>
       <span>
-        <Text>kontakt</Text>
+        <Text>{children}</Text>
       </span>
     </Button>
   );

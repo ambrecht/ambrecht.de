@@ -6,16 +6,12 @@ import Blase from './Blase';
 import InfoButtons from './InfoButtons';
 import React, { useState, useEffect } from 'react';
 
-
 //MARKUP
 export default function MARKUP(props) {
   const [ID, setID] = useState(0);
   const select = (id) => {
     setID(id);
   };
-  useEffect(() => {
-    console.log(ID);
-  }, [ID]);
 
   return (
     <STYLE>
