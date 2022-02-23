@@ -4,7 +4,6 @@ import Navigation from '../components/Navigation';
 import React, { useRef, useEffect, useState, useCallback } from 'react';
 import Container from '../components/Container';
 
-import Workspace from '../components/InteractiveTable';
 import SubHero from '../components/SubHero';
 import Image from 'next/image';
 import Quote from '../components/Quote';
