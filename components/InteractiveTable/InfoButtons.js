@@ -11,7 +11,7 @@ const SvgComponent = function ({ onEnter }, props) {
           </linearGradient>
         </defs>
         <g
-          class="button"
+          className="button"
           fill="url('#a')"
           onMouseEnter={() => {
             onEnter(1);
@@ -22,7 +22,7 @@ const SvgComponent = function ({ onEnter }, props) {
           <circle cx={329.167} cy={755.444} r={14.333} />
         </g>
         <g
-          class="button"
+          className="button"
           fill="url('#a')"
           onMouseEnter={() => {
             onEnter(2);
@@ -33,7 +33,7 @@ const SvgComponent = function ({ onEnter }, props) {
           <circle cx={972.618} cy={502.784} r={14.333} />
         </g>
         <g
-          class="button"
+          className="button"
           fill="url('#a')"
           onMouseEnter={() => {
             onEnter(3);
@@ -44,7 +44,7 @@ const SvgComponent = function ({ onEnter }, props) {
           <circle cx={1266.283} cy={796.776} r={14.333} />
         </g>
         <g
-          class="button"
+          className="button"
           fill="url('#a')"
           onMouseEnter={() => {
             onEnter(4);
@@ -55,7 +55,7 @@ const SvgComponent = function ({ onEnter }, props) {
           <circle cx={1655.283} cy={755.776} r={14.333} />
         </g>
         <g
-          class="button"
+          className="button"
           fill="url('#a')"
           onMouseEnter={() => {
             onEnter(5);
@@ -66,7 +66,7 @@ const SvgComponent = function ({ onEnter }, props) {
           <circle cx={688.283} cy={321.776} r={14.333} />
         </g>
         <g
-          class="button"
+          className="button"
           fill="url('#a')"
           onMouseEnter={() => {
             onEnter(6);
@@ -77,7 +77,7 @@ const SvgComponent = function ({ onEnter }, props) {
           <circle cx={1544.283} cy={487.776} r={14.333} />
         </g>
         <g
-          class="button"
+          className="button"
           fill="url('#a')"
           onMouseEnter={() => {
             onEnter(7);
@@ -89,7 +89,7 @@ const SvgComponent = function ({ onEnter }, props) {
         </g>
 
         <g
-          class="button"
+          className="button"
           fill="url('#a')"
           onMouseEnter={() => {
             onEnter(8);
