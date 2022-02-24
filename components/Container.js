@@ -16,5 +16,4 @@ const Container = styled.div`
   padding-right: ${({ theme }) => theme.padding.main};
   z-index: 10;
   overflow: hidden;
-  background-color: #293133;
 `;

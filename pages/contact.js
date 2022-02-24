@@ -17,3 +17,6 @@ export default function MARKUP() {
     </Container>
   );
 }
+
+const Wrapper = styled.div`
+npm audit fix --force`;
