@@ -10,7 +10,7 @@ async function sendEmail(req, res) {
       to: 'tino@ambrecht.de', // Your email where you'll receive emails
       from: 'tino-ambrecht@hotmail.de', // your website email address here
       subject: `${req.body.name} hat dir eine Nachricht geschickt`,
-      html: `<div>You've got a mail</div>`,
+      html: `<div>${{ ...req.body }}</div>`,
     });
   } catch (error) {
     return res.status(error.statusCode || 500).json({ error: error.message });

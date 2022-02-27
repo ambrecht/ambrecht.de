@@ -4,7 +4,7 @@ import Container from '../components/Container';
 import HeroMessage from '../components/HeroMessage';
 import Background from '../components/Background';
 import CardSlider from '../components/CardSlider/Index';
-import Quote from '../components/Quote';
+import Quote from '../components/Quote2';
 import Footer from '../components/Footer';
 
 export default function Home() {
