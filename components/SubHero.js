@@ -17,8 +17,8 @@ export default function MARKUP() {
             className="Tino Ambrecht"
             src={Ich}
             alt="Picture of a computer"
-            width={700}
-            height={700}
+            width={400}
+            height={400}
             objectFit="cover"
           ></Image>
         </StyledImage>
@@ -58,9 +58,8 @@ export default function MARKUP() {
             className="Unterschrift"
             src={Unterschrift}
             alt="Picture of a computer"
-            width={200}
-            height={200}
-            objectFit="fill"
+            width={100}
+            height={100}
           ></Image>
         </StyledImage>
       </Container>
@@ -111,7 +110,6 @@ const StyledImage = styled.span`
 `;
 
 const Text = styled.span`
-  padding-left: 3rem;
   max-width: 1000px;
   display: block;
   margin-top: 1rem;
@@ -138,5 +136,9 @@ const Text = styled.span`
     -webkit-background-clip: text;
     background-size: 100%;
     -webkit-text-fill-color: transparent;
+
+    @media (max-width: 768px) {
+      font-size: 1.5rem;
+    }
   }
 `;

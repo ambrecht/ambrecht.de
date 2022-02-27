@@ -9,7 +9,6 @@ const GlobalStyle = createGlobalStyle`
     
     font-family: 'Poppins', sans-serif;
     font-size: calc(1rem + 0.5vw);
-    max-width: 88.75rem;
     margin: 0 auto;
     box-sizing: border-box;
     
@@ -26,8 +25,6 @@ const GlobalStyle = createGlobalStyle`
 const theme = {
   padding: {
     main: '5.625rem',
-    second: `padding-left: ${({ theme }) => theme.padding.main};
-  padding-right: ${({ theme }) => theme.padding.main};`,
   },
   colors: {
     background: '#212121',

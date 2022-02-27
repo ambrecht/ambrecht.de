@@ -94,7 +94,6 @@ const GridContainer = styled.div`
 `;
 
 const Text = styled.span`
-  padding-left: 3rem;
   max-width: 66%;
   display: block;
   margin-top: 1rem;

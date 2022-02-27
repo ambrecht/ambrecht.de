@@ -34,7 +34,6 @@ const Container = styled.div`
 `;
 
 const Text = styled.span`
-  padding-left: 3rem;
   max-width: 1000px;
   display: block;
   margin-top: 1rem;
@@ -44,6 +43,10 @@ const Text = styled.span`
   text-align: justify;
 
   letter-spacing: 0.01em;
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
 
   h1 {
     display: block;
@@ -62,6 +65,10 @@ const Text = styled.span`
     -webkit-background-clip: text;
     background-size: 100%;
     -webkit-text-fill-color: transparent;
+
+    @media (max-width: 768px) {
+      font-size: 1rem;
+    }
   }
 
   h2 {
@@ -75,5 +82,8 @@ const Text = styled.span`
     -webkit-background-clip: text;
     background-size: 100%;
     -webkit-text-fill-color: transparent;
+  }
+  @media (max-width: 768px) {
+    font-size: 1rem;
   }
 `;

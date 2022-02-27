@@ -26,4 +26,8 @@ const Wrapper = styled.h1`
   -webkit-background-clip: text;
   background-size: 100%;
   -webkit-text-fill-color: transparent;
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
 `;

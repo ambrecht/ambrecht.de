@@ -4,9 +4,23 @@ import Logo from '../public/logo.svg';
 import Contact from '../public/kontakt.svg';
 import Image from 'next/image';
 import ContactButton from './ContactButton';
+import Burger from '../components/Burger/Index';
+import { useWindowSize } from 'web-api-hooks';
 
 const Navigation = () => {
-  return (
+  const [windowWidth, windowHeight] = useWindowSize();
+  return windowWidth <= 800 ? (
+    <MobileNav>
+      <div className="logo-container">
+        <Link href="/" passHref>
+          <a aria-hidden="true" role="img">
+            <Image src={Logo} alt="Logo" layout="intrinsic" />
+          </a>
+        </Link>
+      </div>
+      <Burger></Burger>
+    </MobileNav>
+  ) : (
     <NavContainer>
       <div className="logo-container">
         <Link href="/" passHref>
@@ -85,6 +99,13 @@ const NavContainer = styled.nav`
       padding: 0;
     }
   }
+`;
+
+const MobileNav = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `;
 
 export default Navigation;

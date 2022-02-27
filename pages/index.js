@@ -27,7 +27,7 @@ export default function Home() {
           einzusetzen.
         </Quote>
       </Container>
-      <CardSlider></CardSlider>
+
       <Footer></Footer>
     </>
   );

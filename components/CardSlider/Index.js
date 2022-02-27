@@ -33,12 +33,20 @@ export default function MARKUP() {
 
 //STYLE
 const STYLE = styled.div`
+  flex-direction: row;
   box-sizing: border-box;
   width: 99vw;
   height: 50vh;
-  justify-content: space-between;
-  align-items: bottom;
+  justify-content: center;
+  align-items: center;
   display: flex;
   row-gap: 1rem;
   column-gap: 0rem;
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `;

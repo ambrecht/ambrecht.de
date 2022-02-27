@@ -16,4 +16,9 @@ const Container = styled.div`
   padding-right: ${({ theme }) => theme.padding.main};
   z-index: 10;
   overflow: hidden;
+
+  @media (max-width: 768px) {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
 `;
