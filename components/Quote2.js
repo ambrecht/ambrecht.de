@@ -1,16 +1,28 @@
 import { Children } from 'react';
 import styled from 'styled-components';
-import { Gradient } from '../Mixins/Mixins';
+import { Gradient, MediaWidth } from '../Mixins/Mixins';
+import Image from 'next/image';
 
 //LOGIC
 const LOGIC = () => {};
 //MARKUP
-export default function MARKUP({ children, autor }) {
+export default function MARKUP({ children, autor, image, alttext }) {
   return (
     <Wrapper>
       <BlockQuoteBox>
-        <QuoteText>{children}</QuoteText>
+        <QuoteText image={image}>
+          <Bild
+            src={image}
+            alt={alttext}
+            width={250}
+            height={250}
+            layout=""
+          ></Bild>
+          {children}
+        </QuoteText>
+
         <br />
+
         <Autor>- {autor}</Autor>
       </BlockQuoteBox>
     </Wrapper>
@@ -35,7 +47,8 @@ const BlockQuoteBox = styled.blockquote`
   display: inline-block;
   position: relative;
   box-sizing: border-box;
-  border-left: 0.1em solid white;
+  border-left: 0.05em solid white;
+  ${MediaWidth}
 `;
 
 const QuoteText = styled.div`
@@ -70,12 +83,16 @@ const QuoteText = styled.div`
 `;
 
 const Autor = styled.p`
+  height: 10vh;
   font-size: 2rem;
   font-weight: 400;
 
   ${Gradient}
   text-align: center;
+  ${MediaWidth}
 
   &:after {
   }
 `;
+
+const Bild = styled(Image)``;

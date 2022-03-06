@@ -29,9 +29,9 @@ const Navigation = () => {
           </a>
         </Link>
       </div>
-      <Link href="/about" passHref>
+      <Link href="/mission" passHref>
         <a aria-hidden="true" role="img">
-          <span>Über mich</span>
+          <span>Meine Mission</span>
         </a>
       </Link>
       <Link href="/prozess" passHref>
@@ -41,7 +41,7 @@ const Navigation = () => {
       </Link>
       <Link href="/arbeit" passHref>
         <a aria-hidden="true" role="img">
-          <span>Meine Arbeit</span>
+          <span>Meine arbeit</span>
         </a>
       </Link>
 

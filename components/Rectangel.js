@@ -18,7 +18,6 @@ const StyledComponent = ({ tag, children, ...props }) => {
 
 export default function MARKUP() {
   const [windowScrollX, windowScrollY] = useWindowScrollCoords();
-  console.log(windowScrollY / 100);
   return <StyledComponent test={100 - windowScrollY}></StyledComponent>;
 }
 

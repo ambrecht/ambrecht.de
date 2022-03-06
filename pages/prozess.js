@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Navigation from '../components/Navigation';
 import React, { useRef, useEffect, useState, useCallback } from 'react';
 import Container from '../components/Container';
-
+import Footer from '../components/Footer';
 import Flow from '../components/Flow';
 import Image from 'next/image';
 
@@ -18,6 +18,7 @@ export default function MARKUP() {
         <Navigation></Navigation>
         <Flow></Flow>
       </Container>
+      <Footer image="/art_05.png"></Footer>
     </Wrapper>
   );
 }

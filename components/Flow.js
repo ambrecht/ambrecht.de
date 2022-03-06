@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import Image from 'next/image';
 import Heading from './Heading';
+import { MediaWidth } from '../Mixins/Mixins';
 
 //LOGIC
 const LOGIC = () => {};
@@ -80,17 +81,19 @@ export default function MARKUP() {
 
 //STYLE
 const Wrapper = styled.div`
-  padding-top: 3rem;
+  padding-top: 5rem;
 `;
 
 const GridContainer = styled.div`
+  padding-bottom: 5em;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   gap: 2rem;
 
   width: 100%;
-  height: 66.666vh;
+  height: auto;
+  flex-wrap: nowrap;
 `;
 
 const Text = styled.span`
@@ -104,6 +107,7 @@ const Text = styled.span`
 
   letter-spacing: 0.01em;
   word-spacing: -0.2em;
+  ${MediaWidth}
 
   h1 {
     display: block;

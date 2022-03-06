@@ -3,9 +3,9 @@ import styled from 'styled-components';
 //LOGIC
 
 //MARKUP
-export default function ContactButton({ children }) {
+export default function ContactButton({ children, fontsize }) {
   return (
-    <Button>
+    <Button size={fontsize}>
       <span>
         <Text>{children}</Text>
       </span>
@@ -26,7 +26,7 @@ const Text = styled.span`
 `;
 const Button = styled.button`
   cursor: inherit;
-  font-size: 0.8em;
+  font-size: ${(props) => `${props.size}em`};
   padding: 1em 1.5em;
   border-radius: 3em;
   border: solid 0.2em transparent;

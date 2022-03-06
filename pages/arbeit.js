@@ -4,6 +4,8 @@ import Workspace from '../components/InteractiveTable/Index';
 import React, { useRef, useEffect, useState, useCallback } from 'react';
 import Container from '../components/Container';
 import Navigation from '../components/Navigation';
+import Quote from '../components/Quote2';
+import Footer from '../components/Footer';
 //LOGIC
 const LOGIC = () => {};
 
@@ -14,9 +16,17 @@ export default function MARKUP() {
       <Container>
         <Navigation></Navigation>
         <Space></Space>
+
+        <Quote autor="Fariduddin Attar" image="/attar.png">
+          Das Schicksalsrad will, dass Er dieses Geheimnis aufdeckt. Wer sonst
+          könnte das durch Umherirren? Was ist das Schicksal, außer Suchen?
+          Woher soll jemand wissen, was hinter dem Vorhang ist? Selbst wer
+          einige Jahre gesucht hat, ist unfähig um diese Tür gekreist.
+        </Quote>
         <Heading>Schauen Sie sich in meiner Werkstatt um:</Heading>
       </Container>
       <Workspace></Workspace>
+      <Footer image="/art_02.png"></Footer>
     </Wrapper>
   );
 }
@@ -28,8 +38,8 @@ const Wrapper = styled.div`
 `;
 
 const Heading = styled.h1`
-  border-top: 5px solid white;
-  border-bottom: 5px solid white;
+  border-top: 0.05em solid white;
+  border-bottom: 0.05em solid white;
   padding: 2rem;
 
   display: block;

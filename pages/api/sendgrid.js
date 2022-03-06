@@ -8,9 +8,9 @@ async function sendEmail(req, res) {
   try {
     await sendgrid.send({
       to: 'tino@ambrecht.de', // Your email where you'll receive emails
-      from: 'tino-ambrecht@hotmail.de', // your website email address here
-      subject: `${req.body.name} hat dir eine Nachricht geschickt`,
-      html: `<div>${{ ...req.body }}</div>`,
+      from: `${email}`, // your website email address here
+      subject: `${req.body.name} hat über das Formular geschrieben`,
+      html: `<div>${req.body.message}</div>`,
     });
   } catch (error) {
     return res.status(error.statusCode || 500).json({ error: error.message });

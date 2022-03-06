@@ -36,7 +36,9 @@ export default function MARKUP({ sendState }) {
         <ERROR>Bitte hinterlassen Sie eine Nachricht</ERROR>
       )}
 
-      <Button type="submit">Absenden</Button>
+      <Button type="submit">
+        <Text>Absenden</Text>
+      </Button>
     </Wrapper>
   );
 }
@@ -51,45 +53,47 @@ const Wrapper = styled.form`
 `;
 
 const Input = styled.input`
-   {
-    background: rgba(0, 0, 0, 0.3);
-    width: 33vw;
-    height: 1rem;
-    padding: 1em;
-    margin-bottom: 0.5rem;
-    border: none;
-    border-radius: 1rem;
-    box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.2);
-    color: rgba(255, 255, 255, 0.3);
-    transition: all 0.2s ease-in-out;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-    font-weight: 300;
-    &:hover {
+  background: rgba(0, 0, 0, 0.3);
+  width: 33vw;
+  height: 1rem;
+  padding: 1em;
+  margin-bottom: 0.5rem;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.2);
+  color: rgba(255, 255, 255, 0.3);
+  transition: all 0.2s ease-in-out;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  font-weight: 300;
+
+  @media (max-width: 768px) {
+    width: 70vw;
+  }
+  &:hover {
+    background-image: linear-gradient(to right, #2393ff 0%, #5f1df2 100%);
+    box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.2);
+    color: rgba(255, 255, 255, 1);
+  }
+
+  &[type='email'],
+  &[type='password'] {
+    &:focus {
       background-image: linear-gradient(to right, #2393ff 0%, #5f1df2 100%);
       box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.2);
-      color: rgba(255, 255, 255, 1);
+    }
+  }
+
+  &[type='button'] {
+    margin-top: 10px;
+    width: 150px;
+    font-size: 1rem;
+
+    &:hover {
+      cursor: pointer;
     }
 
-    &[type='email'],
-    &[type='password'] {
-      &:focus {
-        background-image: linear-gradient(to right, #2393ff 0%, #5f1df2 100%);
-        box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.2);
-      }
-    }
-
-    &[type='button'] {
-      margin-top: 10px;
-      width: 150px;
-      font-size: 1rem;
-
-      &:hover {
-        cursor: pointer;
-      }
-
-      &:active {
-        background-image: linear-gradient(to right, #2393ff 0%, #5f1df2 100%);
-      }
+    &:active {
+      background-image: linear-gradient(to right, #2393ff 0%, #5f1df2 100%);
     }
   }
 `;
@@ -110,54 +114,66 @@ const ERROR = styled.div`
 `;
 
 const TextInput = styled.textarea`
-   {
-    background: rgba(0, 0, 0, 0.3);
-    width: 33vw;
-    height: 10rem;
-    padding: 1em;
-    margin-bottom: 0.5rem;
-    border: none;
-    border-radius: 1rem;
-    box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.2);
-    color: rgba(255, 255, 255, 0.3);
-    transition: all 0.2s ease-in-out;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-    font-weight: 300;
+  background: rgba(0, 0, 0, 0.3);
+  width: 33vw;
+  height: 10rem;
+  padding: 1em;
+  margin-bottom: 0.5rem;
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.2);
+  color: rgba(255, 255, 255, 0.3);
+  transition: all 0.2s ease-in-out;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  font-weight: 300;
 
-    &:hover {
+  @media (max-width: 768px) {
+    width: 70vw;
+  }
+
+  &:hover {
+    background-image: linear-gradient(to right, #2393ff 0%, #5f1df2 100%);
+    box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.2);
+    color: rgba(255, 255, 255, 1);
+  }
+
+  &[type='email'],
+  &[type='password'] {
+    &:focus {
+      color: rgba(255, 255, 255, 1);
       background-image: linear-gradient(to right, #2393ff 0%, #5f1df2 100%);
       box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.2);
-      color: rgba(255, 255, 255, 1);
+    }
+  }
+
+  &[type='button'] {
+    margin-top: 10px;
+    width: 150px;
+    font-size: 1rem;
+
+    &:hover {
+      cursor: pointer;
     }
 
-    &[type='email'],
-    &[type='password'] {
-      &:focus {
-        color: rgba(255, 255, 255, 1);
-        background-image: linear-gradient(to right, #2393ff 0%, #5f1df2 100%);
-        box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.2);
-      }
-    }
-
-    &[type='button'] {
-      margin-top: 10px;
-      width: 150px;
-      font-size: 1rem;
-
-      &:hover {
-        cursor: pointer;
-      }
-
-      &:active {
-        background-image: linear-gradient(to right, #2393ff 0%, #5f1df2 100%);
-      }
+    &:active {
+      background-image: linear-gradient(to right, #2393ff 0%, #5f1df2 100%);
     }
   }
 `;
 
+const Text = styled.span`
+  background: linear-gradient(to right, #2393ff 0%, #5f1df2 100%);
+  color: transparent;
+  background-clip: text;
+  text-transform: capitalize;
+  font-weight: 600;
+  line-height: 1em;
+  letter-spacing: 0.1em;
+`;
+
 const Button = styled.button`
   cursor: inherit;
-  font-size: 0.8em;
+  font-size: ${(props) => `${props.size}em`};
   padding: 1em 1.5em;
   border-radius: 3em;
   border: solid 0.2em transparent;
@@ -174,7 +190,8 @@ const Button = styled.button`
 
   &:hover {
     box-shadow: none;
-
-    color: white;
+    ${Text} {
+      color: white;
+    }
   }
 `;

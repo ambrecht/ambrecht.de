@@ -10,8 +10,8 @@ export default function MARKUP({ children }) {
 
 //STYLE
 const Wrapper = styled.h1`
-  border-top: 5px solid white;
-  border-bottom: 5px solid white;
+  border-top: 0.05em solid white;
+  border-bottom: 0.05em solid white;
   padding: 2rem;
 
   display: block;
