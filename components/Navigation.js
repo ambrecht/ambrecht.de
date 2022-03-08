@@ -68,7 +68,11 @@ const NavContainer = styled.nav`
   z-index: 20;
 
   gap: 10%;
-  overflow: none;
+
+  @media (max-width: 1300px) {
+    gap: 5%;
+    font-size: 0.9em;
+  }
 
   a {
     display: block;
@@ -91,12 +95,20 @@ const NavContainer = styled.nav`
       padding: 0;
       width: 10em;
     }
+
+    @media (max-height: 600px) {
+      font-size: 0.9em;
+    }
   }
 
   .contact-container {
     margin-left: auto;
+    font-size: 0.8em;
     a {
       padding: 0;
+    }
+    @media (max-height: 600px) {
+      font-size: 0.7em;
     }
   }
 `;

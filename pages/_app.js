@@ -40,6 +40,7 @@ export default function App({ Component, pageProps }) {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Ambrecht.de</title>
+        <link rel="shortcut icon" href="/favicon2.ico" />
         <link rel="canonical" href="http://mysite.com/example" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

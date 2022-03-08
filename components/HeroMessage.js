@@ -24,21 +24,24 @@ export default function MARKUP(props) {
 const HeroH1 = styled.h1`
   margin: 0;
   padding-top: 1em;
-letter-spacing: 0.008em;
-  
-  font-size:  5rem;
+  letter-spacing: 0.008em;
+
+  font-size: 5rem;
   color: white;
   text-transform: uppercase;
   text-align: left;
   z-index: 10;
-  width: 100%
+
   overflow: none;
 
-   @media (max-width: 768px) {
-     font-size:  3rem;
-
+  @media (max-width: 768px) {
+    font-size: 15vw;
   }
-  
+
+  @media (max-height: 600px) {
+    font-size: 12vh;
+    width: 61.8vw;
+  }
 `;
 
 const HeroP = styled.h4`
