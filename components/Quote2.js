@@ -43,7 +43,7 @@ const Wrapper = styled.div`
 const BlockQuoteBox = styled.blockquote`
   max-width: 1000px;
   font-size: 1em;
-  line-height: 1.2;
+  line-height: 1.4em;
   color: white;
   padding: 1em 0em 0em 5em;
   display: inline-block;

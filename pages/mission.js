@@ -77,8 +77,8 @@ const Wrapper = styled.div`
 
 const Text = styled.div`
   max-width: 1000px;
-  font-size: 1.2em;
-  line-height: 1.2;
+  font-size: 1em;
+  line-height: 1.4em;
   color: white;
   padding: 1em 0em 3em 5em;
   display: block;

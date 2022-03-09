@@ -39,6 +39,10 @@ export default function App({ Component, pageProps }) {
     <>
       <Helmet>
         <meta charSet="utf-8" />
+        <meta
+          name="google-site-verification"
+          content="IQSNfLKoSA1wvqBIHNiOHP-o60hpF_3gmBFkdOt5RXw"
+        />
         <title>Ambrecht.de</title>
         <link rel="shortcut icon" href="/favicon2.ico" />
         <link rel="canonical" href="http://mysite.com/example" />
