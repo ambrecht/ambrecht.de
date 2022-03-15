@@ -11,7 +11,7 @@ const GlobalStyle = createGlobalStyle`
     font-size: calc(1rem + 0.5vw);
     margin: 0 auto;
     box-sizing: border-box;
-    
+    letter-spacing: 0.1em;
     
 
       

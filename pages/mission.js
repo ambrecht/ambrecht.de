@@ -3,10 +3,12 @@ import styled from 'styled-components';
 import Navigation from '../components/Navigation';
 import React, { useRef, useEffect, useState, useCallback } from 'react';
 import Container from '../components/Container';
+import MissionTextBox from '../components/MissionTextBox';
 
 import Quote from '../components/Quote2';
 import { Gradient, MediaWidth } from '../Mixins/Mixins';
 import Footer from '../components/Footer';
+import Image from 'next/image';
 
 //LOGIC
 const LOGIC = () => {};
@@ -28,40 +30,61 @@ export default function MARKUP() {
             Seele wieder aufleuchten, zieht sie durch den Körper hinauf und
             verwandelt ihn ganz in wahres Sein.
           </Quote>
+          <div></div>
 
-          <Text>
-            <Heading>MEINE MISSION</Heading>
+          <MissionTextBox
+            image={'/mission (1).jpg'}
+            imagealt={'Bild eines Berges'}
+            heading={'MEINE MISSION'}
+            direction={true}
+          >
             Für meine Kunden entwickle Ich mit der Hilfe von modernen
             Technologien digitale Produkte, die Emotionen auslösen, einen
             Mehrwert schaffen und das Leben anderer Menschen bereichern.
-          </Text>
-
-          <Text>
-            <Heading>MEINE VISION</Heading>
+          </MissionTextBox>
+          <MissionTextBox
+            image={'/mission (2).jpg'}
+            imagealt={'Bild eines Berges'}
+            heading={'MEINE VISION'}
+            direction={false}
+          >
             Das Ziel meiner Arbeit ist es, mit unterschiedlichen Menschen an
             verschiedenen Projekten zu arbeiten und diese zum Erfolg zu führen.
             Gemeinsam machen wir das Internet zu einem schöneren Ort und wachsen
             an den Herausforderungen jedes Projekts.
-          </Text>
-          <Text>
-            <Heading>MEINE WERTE</Heading>- Ich begenge meinem Gegenüber auf
-            Augenhöhe. - Das Leben ist ein endloser Lernprozess. - Ich übernehme
-            Verantwortung für meine Resultate. - Technologie darf niemals
-            Selbstzweck sein. - Selbstreflektion hilft mir mich in die
-            Sichtweise meines Gegenübers hineinzuversetzen - Geistige
-            Unabhänigkeit erlaubt es mir mich selbst und meine Umgebung kritisch
-            zu hinterfragen.
-          </Text>
+          </MissionTextBox>
+          <MissionTextBox
+            image={'/mission (3).jpg'}
+            imagealt={'Bild eines Berges'}
+            heading={'MEINE WERTE'}
+            direction={true}
+          >
+            - Ich begenge meinem Gegenüber auf Augenhöhe. - Das Leben ist ein
+            endloser Lernprozess. - Ich übernehme Verantwortung für meine
+            Resultate. - Technologie darf niemals Selbstzweck sein. -
+            Selbstreflektion hilft mir mich in die Sichtweise meines Gegenübers
+            hineinzuversetzen - Geistige Unabhänigkeit erlaubt es mir mich
+            selbst und meine Umgebung kritisch zu hinterfragen.
+          </MissionTextBox>
 
-          <Text>
-            <Heading>MEINE STÄRKEN</Heading>Intuition und Wissen, Sensibilität
-            und Einsicht, ästhetisches Empfinden und intellektuelle Begabung.
-          </Text>
-
-          <Text>
-            <Heading>MEIN VERSPERECHEN</Heading>Jedes Unternehmen kann sich
-            erfolgreich online Positionieren und seine Zielgruppe erreichen.
-          </Text>
+          <MissionTextBox
+            image={'/mission (4).jpg'}
+            imagealt={'Bild eines Berges'}
+            heading={'MEINE STÄRKEN'}
+            direction={false}
+          >
+            Intuition und Wissen, Sensibilität und Einsicht, ästhetisches
+            Empfinden und intellektuelle Begabung.
+          </MissionTextBox>
+          <MissionTextBox
+            image="/mission2.png"
+            imagealt={'Bild eines Berges'}
+            heading={'MEIN VERSPERECHEN'}
+            direction={true}
+          >
+            Intuition und Wissen, Sensibilität und Einsicht, ästhetisches
+            Empfinden und intellektuelle Begabung.
+          </MissionTextBox>
         </FlexBox>
       </Container>
       <Footer image="/art_01.png"></Footer>
@@ -73,20 +96,6 @@ export default function MARKUP() {
 const Wrapper = styled.div`
   background-color: #293133;
   overflow: hidden;
-`;
-
-const Text = styled.div`
-  max-width: 1000px;
-  font-size: 1em;
-  line-height: 1.4em;
-  color: white;
-  padding: 1em 0em 3em 5em;
-  display: block;
-  ${MediaWidth}
-`;
-
-const Heading = styled.h1`
-  ${Gradient}
 `;
 
 const FlexBox = styled.div`

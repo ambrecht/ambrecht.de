@@ -4,15 +4,18 @@ import { Canvas, extend, useThree, useFrame } from 'react-three-fiber';
 import { CubeTextureLoader, Mesh, Euler } from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import styled from 'styled-components';
-import { useViewportScrollCoords, useWindowScrollCoords } from 'web-api-hooks';
-import useMousePosition from '../../Hooks/useMousePosition';
+import {
+  useViewportScrollCoords,
+  useWindowScrollCoords,
+  useMouseCoords,
+} from 'web-api-hooks';
 import Test from '../../public/Rect.svg';
 
 extend({ OrbitControls });
 
 const CameraControls = (props) => {
   const [scroll, setScroll] = useState(0);
-  const { x, y } = useMousePosition();
+  const [mouseX, mouseY] = useMouseCoords();
   const [windowScrollX, windowScrollY] = useWindowScrollCoords();
 
   // Get a reference to the Three.js Camera, and the canvas html element.
@@ -22,13 +25,6 @@ const CameraControls = (props) => {
     camera,
     gl: { domElement },
   } = useThree();
-
-  useEffect(() => {
-    setScroll(windowScrollY / 200000000);
-    console.log(scroll);
-  }, [windowScrollY]);
-
-  camera.position.y = scroll;
 
   // Ref to the controls, so that we can update them on every frame using useFrame
   const controls = useRef();

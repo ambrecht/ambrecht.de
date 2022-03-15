@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Gradient, MediaWidth } from '../Mixins/Mixins';
+import Image from 'next/image';
 
 //LOGIC
 const LOGIC = () => {};
@@ -11,13 +12,13 @@ export default function MARKUP({ image }) {
       <Footer image={image}></Footer>
       <ABSOLUT>
         <Footerbox>
+          <Bild src="/3DDREIECK.svg" alt="Logo" width={250} height={350}></Bild>
           <span>
             Tino Ambrecht <br />
             Neue Bahnhofstr. 26 <br />
             10245 Berlin <br />
           </span>
           <span>tino@ambrecht.de</span>
-          <GradientSpan>Geheimnissucher</GradientSpan>
         </Footerbox>
       </ABSOLUT>
       <Copy>
@@ -29,12 +30,18 @@ export default function MARKUP({ image }) {
 }
 
 //STYLE
+
 const Wrapper = styled.div`
   font-weight: 300;
   position: relative;
   overflow: hidden;
   width: 99vw;
   height: 100vh;
+`;
+
+const Bild = styled(Image)`
+  opacity: 200%;
+  mix-blend-mode: lighten;
 `;
 
 const Footer = styled.div`
@@ -67,23 +74,23 @@ const Copy = styled.span`
 `;
 
 const Footerbox = styled.div`
-  border-top: 0.1em solid white;
   padding-top: ${({ theme }) => theme.padding.main};
   padding-left: ${({ theme }) => theme.padding.main};
   padding-right: ${({ theme }) => theme.padding.main};
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   align-content: space-around;
 
   color: white;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.9);
 `;
 
 const ABSOLUT = styled.div`
   position: absolute;
   width: 100vw;
-  bottom: 30%;
+  bottom: 10vh;
 `;
 
 const GradientSpan = styled.span`

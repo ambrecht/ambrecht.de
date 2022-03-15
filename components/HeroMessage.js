@@ -22,9 +22,10 @@ export default function MARKUP(props) {
 //STYLE
 
 const HeroH1 = styled.h1`
+  max-width: 1900px;
   margin: 0;
   padding-top: 1em;
-  letter-spacing: 0.008em;
+  letter-spacing: 0.02em;
 
   font-size: 5rem;
   color: white;
@@ -54,4 +55,8 @@ const HeroP = styled.h4`
   text-align: center;
   z-index: 10;
   font-weight: 100;
+
+  @media (max-height: 600px) {
+    font-size: 6vh;
+  }
 `;

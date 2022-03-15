@@ -49,6 +49,7 @@ const BlockQuoteBox = styled.blockquote`
   display: inline-block;
   position: relative;
   box-sizing: border-box;
+  text-shadow: 0.5px 1px 2px rgba(0, 0, 0, 0.9);
   border-left: 0.05em solid white;
   ${MediaWidth}
   @media (max-width: 1300px) {
@@ -57,6 +58,8 @@ const BlockQuoteBox = styled.blockquote`
 `;
 
 const QuoteText = styled.div`
+  line-height: 1.5;
+  letter-spacing: 0.08em;
   &:before {
     display: inline-block;
     position: absolute;
@@ -94,6 +97,7 @@ const Autor = styled.p`
   height: 10vh;
   font-size: 1rem;
   font-weight: 400;
+  text-shadow: none;
 
   ${Gradient}
   text-align: center;

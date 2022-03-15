@@ -31,17 +31,17 @@ const Navigation = () => {
       </div>
       <Link href="/mission" passHref>
         <a aria-hidden="true" role="img">
-          <span>Meine Mission</span>
+          <span>Vision</span>
         </a>
       </Link>
       <Link href="/prozess" passHref>
         <a aria-hidden="true" role="img">
-          <span>Mein Prozess</span>
+          <span>Prozess</span>
         </a>
       </Link>
       <Link href="/arbeit" passHref>
         <a aria-hidden="true" role="img">
-          <span>Meine arbeit</span>
+          <span> Werkstatt</span>
         </a>
       </Link>
 

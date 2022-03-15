@@ -20,6 +20,7 @@ export default function TextAnimation(props) {
 
 const Wrapper = styled.span`
   display: inline-block;
+  text-shadow: none;
   background-image: linear-gradient(
     72.61deg,
     rgba(35, 147, 255, 1) 22.63%,
