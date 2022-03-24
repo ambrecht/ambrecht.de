@@ -1,6 +1,6 @@
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import { Normalize } from 'styled-normalize';
-import { Helmet } from 'react-helmet';
+import HeadMeta from '../components/HeadMeta';
 
 const GlobalStyle = createGlobalStyle`
   :root {
@@ -37,22 +37,7 @@ const theme = {
 export default function App({ Component, pageProps }) {
   return (
     <>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <meta
-          name="google-site-verification"
-          content="IQSNfLKoSA1wvqBIHNiOHP-o60hpF_3gmBFkdOt5RXw"
-        />
-        <title>Ambrecht.de</title>
-        <link rel="shortcut icon" href="/favicon2.ico" />
-        <link rel="canonical" href="http://mysite.com/example" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;800&display=swap"
-          rel="stylesheet"
-        />
-      </Helmet>
+      <HeadMeta></HeadMeta>
       <Normalize />
       <GlobalStyle />
       <ThemeProvider theme={theme}>

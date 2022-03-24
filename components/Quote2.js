@@ -49,7 +49,7 @@ const BlockQuoteBox = styled.blockquote`
   display: inline-block;
   position: relative;
   box-sizing: border-box;
-  text-shadow: 0.5px 1px 2px rgba(0, 0, 0, 0.9);
+  text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.9);
   border-left: 0.05em solid white;
   ${MediaWidth}
   @media (max-width: 1300px) {
