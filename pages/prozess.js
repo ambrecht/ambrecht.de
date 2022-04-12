@@ -6,7 +6,7 @@ import Container from '../components/Container';
 import Footer from '../components/Footer';
 import Flow from '../components/Flow';
 import Image from 'next/image';
-
+import ProcessGrid from '../components/ProcessGrid';
 //LOGIC
 const LOGIC = () => {};
 
@@ -18,6 +18,7 @@ export default function MARKUP() {
         <Navigation></Navigation>
         <Flow></Flow>
       </Container>
+
       <Footer image="/art_05.png"></Footer>
     </Wrapper>
   );

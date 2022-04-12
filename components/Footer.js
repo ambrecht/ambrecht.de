@@ -12,7 +12,7 @@ export default function MARKUP({ image }) {
       <Footer image={image}></Footer>
       <ABSOLUT>
         <Footerbox>
-          <Bild src="/3DDREIECK.svg" alt="Logo" width={250} height={350}></Bild>
+          <Bild src="/3DDREIECK.svg" alt="Logo" width={150} height={250}></Bild>
           <span>
             Tino Ambrecht <br />
             Neue Bahnhofstr. 26 <br />

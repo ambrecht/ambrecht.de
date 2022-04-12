@@ -14,7 +14,7 @@ export default function MARKUP(props) {
         <TextAnimation>Erfolg Erlebnis Abenteuer</TextAnimation>
       </HeroH1>
 
-      <HeroP>Wie eine Reise durch den Kosmos der Ideen...</HeroP>
+      <HeroP>analytisches Denken trifft kreative Imagination...</HeroP>
     </>
   );
 }

@@ -30,12 +30,14 @@ export default function MARKUP({
     <FlexBox>
       <FlexBoxText direction={direction}>
         <BildCon>
-          <Image
-            src={image}
-            alt={imagealt}
-            layout={`fill`}
-            objectFit={`cover`}
-          ></Image>
+          {image ? (
+            <Image
+              src={image}
+              alt={imagealt}
+              layout={`fill`}
+              objectFit={`cover`}
+            ></Image>
+          ) : null}
         </BildCon>
         <Text>
           <Heading>{heading}</Heading>
