@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-import Navigation from '../components/Navigation';
 import React, {
   useRef,
   useEffect,
@@ -15,36 +14,20 @@ import { Gradient, MediaWidth } from '../Mixins/Mixins';
 import Footer from '../components/Footer';
 import Image from 'next/image';
 
-//LOGIC
-const LOGIC = () => {};
-
 //MARKUP
-export default function MARKUP({
-  image,
-  imagealt,
-  heading,
-  children,
-  direction,
-}) {
+export default function MARKUP({ ID, heading, children, direction, Table }) {
+  Table(ID);
   return (
-    <FlexBox>
-      <FlexBoxText direction={direction}>
-        <BildCon>
-          {image ? (
-            <Image
-              src={image}
-              alt={imagealt}
-              layout={`fill`}
-              objectFit={`cover`}
-            ></Image>
-          ) : null}
-        </BildCon>
-        <Text>
-          <Heading>{heading}</Heading>
-          {children}
-        </Text>
-      </FlexBoxText>
-    </FlexBox>
+    <Section id={ID}>
+      <FlexBox>
+        <FlexBoxText direction={direction}>
+          <Text>
+            <Heading>{heading}</Heading>
+            {children}
+          </Text>
+        </FlexBoxText>
+      </FlexBox>
+    </Section>
   );
 }
 
@@ -64,6 +47,8 @@ const Text = styled.div`
 const Heading = styled.h1`
   ${Gradient}
 `;
+
+const Section = styled.section``;
 
 const FlexBox = styled.div`
   padding-top: 10vh;
