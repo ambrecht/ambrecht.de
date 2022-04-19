@@ -14,10 +14,6 @@ import Image from 'next/image';
 
 //MARKUP
 export default function MARKUP() {
-  const LOGIC = (externID) => {
-    console.log('Bier');
-  };
-
   return (
     <Wrapper>
       <Container>
@@ -33,7 +29,7 @@ export default function MARKUP() {
             Seele wieder aufleuchten, zieht sie durch den Körper hinauf und
             verwandelt ihn ganz in wahres Sein.
           </Quote>
-          <TableOfContents></TableOfContents>
+
           <MissionTextBox
             ID="1"
             heading={'MEINE MISSION'}
@@ -52,18 +48,19 @@ export default function MARKUP() {
             direction={true}
             Table={LOGIC}
           >
-            Im Umgang mit Technologie ist ein philosophisches Fundament eine
-            wichtige Voraussetzung um sich über den Sinn und Zweck von Technik
-            klar zu werden. Technologie sollte dabei niemals Selbstzweck sein,
-            sondern immer nur als Werkzeug gebraucht werden, einen bestimmten
-            Zweck zu erfüllen. Der große Schweizer Philosoph Paul Häberlin
-            schreibt seiner kleinen Schrift "Vom Menschen und seiner
-            Bestimmung". <br />
-            "So ist alle Technik der "Nützlichekit", d.h der Lebensförderung
+            m Umgang mit Technologie ist ein philosophisches Fundament überaus
+            hilfreich um sich über den Sinn und Zweck von Technik klar zu
+            werden. Technologie sollte dabei niemals Selbstzweck sein, sondern
+            immer nur als Werkzeug gebraucht werden, einen bestimmten Zweck zu
+            erfüllen. Der große Schweizer Philosoph Paul Häberlin schreibt
+            seiner Schrift "Vom Menschen und seiner Bestimmung".
+            <br />
+            "So ist alle Technik der "Nützlichkeit", d.h der Lebensförderung
             wertvoll, sofern sie "Leben" als geistiges Leben intendiert. Sie
             wäre nur dann grundsätzlich abzulehnen, wenn sie das bloße Dasein
             als höchsten Wert anvisierte, sie wäre dann geistlose
-            kulturfeindliche Technik." <br />
+            kulturfeindliche Technik."
+            <br />
             <br />
             Wird die Technik also zum Selbstzweck, wird sie grundsätzlich
             destruktiv, sie verfehlt ihren Zweck, der immer nur der Entfaltung
@@ -86,22 +83,23 @@ export default function MARKUP() {
             das sogenannte Gödel-Turing-Problem der Selbstreferenz: Indem
             Kurzweil seinen eigenen Verstand und sein eignes Bewusstsein
             benutzen muss, um die Bedeutung des Bewusstseins zu leugnen,
-            wiederlegt er sich selbst.
+            widerlegt er sich selbst.
             <br />
-            <br /> Selbst der leistungstärkste Computer heute basiert auf den
+            <br /> Selbst der leistungsstärkste Computer heute basiert auf den
             gleichen Prinzipien wie Zuses erster Rechner von 1937. Egal wie sehr
             sich die Technik auch weiterentwickelt, alle Symbole, die von einem
             Computer verarbeitet werden, bedürfen der Vermittlung durch einen
-            interpretierenden Geist. Die Maschine selbst weiß aber nichts. Genau
-            so wie ein Abakus ohne einen interpretierenden Geist nicht weiter
-            ist als eine nutzlose Konstruktion.
+            interpretierenden Geist. Die Maschine selbst weiß aber nichts.
+            Genauso wie ein Abakus ohne einen interpretierenden Geist nicht
+            weiter ist als eine nutzlose Konstruktion.
             <br />
             <br />
             Das heißt es gibt einen entscheidenden Unterschied zwischen
             programmierbaren Maschinen und Programmierern. Die Maschinen sind
             deterministisch und die Programmierer sind kreativ. Bewusstsein
             entsteht nicht aus dem Denken, sondern es ist die Grundlage des
-            Denkens. <br />
+            Denkens.
+            <br />
             <br />
             Bei weiterem Interesse empfehle ich dazu das Buch "Life After
             Google" von George Gilder.
