@@ -36,11 +36,10 @@ export default function MARKUP() {
             direction={false}
             Table={LOGIC}
           >
-            Für meine Kunden entwickle Ich mit der Hilfe von modernen
-            Technologien digitale Produkte, die Emotionen auslösen, einen
-            Mehrwert schaffen und das Leben anderer Menschen bereichern. Ich
-            verbinde bei meiner Arbeit folgende Bereiche und lasse mich von
-            diesen leiten:
+            Für meine Kunden entwickle Ich mit Hilfe von modernen Technologien
+            digitale Produkte, die Emotionen auslösen, einen Mehrwert schaffen
+            und das Leben anderer Menschen bereichern. Ich verbinde bei meiner
+            Arbeit folgende Bereiche und lasse mich von diesen leiten:
           </MissionTextBox>
           <MissionTextBox
             ID="2"
