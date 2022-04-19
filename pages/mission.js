@@ -30,24 +30,14 @@ export default function MARKUP() {
             verwandelt ihn ganz in wahres Sein.
           </Quote>
 
-          <MissionTextBox
-            ID="1"
-            heading={'MEINE MISSION'}
-            direction={false}
-            Table={LOGIC}
-          >
+          <MissionTextBox ID="1" heading={'MEINE MISSION'} direction={false}>
             Für meine Kunden entwickle Ich mit Hilfe von modernen Technologien
             digitale Produkte, die Emotionen auslösen, einen Mehrwert schaffen
             und das Leben anderer Menschen bereichern. Ich verbinde bei meiner
             Arbeit folgende Bereiche und lasse mich von diesen leiten:
           </MissionTextBox>
-          <MissionTextBox
-            ID="2"
-            heading={'1. Philosophie '}
-            direction={true}
-            Table={LOGIC}
-          >
-            m Umgang mit Technologie ist ein philosophisches Fundament überaus
+          <MissionTextBox ID="2" heading={'1. Philosophie '} direction={true}>
+            Im Umgang mit Technologie ist ein philosophisches Fundament überaus
             hilfreich um sich über den Sinn und Zweck von Technik klar zu
             werden. Technologie sollte dabei niemals Selbstzweck sein, sondern
             immer nur als Werkzeug gebraucht werden, einen bestimmten Zweck zu
@@ -104,12 +94,7 @@ export default function MARKUP() {
             Google" von George Gilder.
           </MissionTextBox>
 
-          <MissionTextBox
-            ID="3"
-            heading={'2. Praxeologie '}
-            direction={true}
-            Table={LOGIC}
-          >
+          <MissionTextBox ID="3" heading={'2. Praxeologie '} direction={true}>
             Die Praxologie liefert ein wichtiges tehoretisches Fundament meiner
             Arbeit, die von Carl Menger schon 1871 entwickelte subjektive Wert
             Theorie ist gerade heute in unserem digitalen Umfeld aktueller denn
@@ -142,7 +127,6 @@ export default function MARKUP() {
             ID="4"
             heading={'Was ist digitale Produktentwicklung?'}
             direction={true}
-            Table={LOGIC}
           >
             Wenn wir mithilfe der Philosophie den Sinn und die Grenzen von
             Technologie bestimmt haben und wenn wir mithilfe der Wissenschaft
@@ -196,12 +180,7 @@ export default function MARKUP() {
             <br />
             <br />
           </MissionTextBox>
-          <MissionTextBox
-            ID="5"
-            heading={'MEINE WERTE'}
-            direction={true}
-            Table={LOGIC}
-          >
+          <MissionTextBox ID="5" heading={'MEINE WERTE'} direction={true}>
             - Ich begenge meinem Gegenüber auf Augenhöhe. - Das Leben ist ein
             endloser Lernprozess. - Ich übernehme Verantwortung für meine
             Resultate. - Technologie darf niemals Selbstzweck sein. -

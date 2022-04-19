@@ -15,8 +15,7 @@ import Footer from '../components/Footer';
 import Image from 'next/image';
 
 //MARKUP
-export default function MARKUP({ ID, heading, children, direction, Table }) {
-  Table(ID);
+export default function MARKUP({ ID, heading, children, direction }) {
   return (
     <Section id={ID}>
       <FlexBox>
