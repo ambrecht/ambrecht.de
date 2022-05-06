@@ -19,24 +19,23 @@ export default function MARKUP() {
       <Container>
         <Navigation></Navigation>
 
+        <Quote
+          autor="Hermes Trismegistus"
+          image="/hermes.png"
+          alttext="Hermes der Meister"
+        >
+          Die Schönheit des Guten umstrahlt den Geist gänzlich, läßt die ganze
+          Seele wieder aufleuchten, zieht sie durch den Körper hinauf und
+          verwandelt ihn ganz in wahres Sein.
+        </Quote>
         <FlexBox>
-          <Quote
-            autor="Hermes Trismegistus"
-            image="/hermes.png"
-            alttext="Hermes der Meister"
-          >
-            Die Schönheit des Guten umstrahlt den Geist gänzlich, läßt die ganze
-            Seele wieder aufleuchten, zieht sie durch den Körper hinauf und
-            verwandelt ihn ganz in wahres Sein.
-          </Quote>
-
           <MissionTextBox ID="1" heading={'MEINE MISSION'} direction={false}>
             Für meine Kunden entwickle Ich mit Hilfe von modernen Technologien
             digitale Produkte, die Emotionen auslösen, einen Mehrwert schaffen
             und das Leben anderer Menschen bereichern. Ich verbinde bei meiner
             Arbeit folgende Bereiche und lasse mich von diesen leiten:
           </MissionTextBox>
-          <MissionTextBox ID="2" heading={'1. Philosophie '} direction={true}>
+          <MissionTextBox ID="2" heading={'PHILOSOPHIE'} direction={true}>
             Im Umgang mit Technologie ist ein philosophisches Fundament überaus
             hilfreich um sich über den Sinn und Zweck von Technik klar zu
             werden. Technologie sollte dabei niemals Selbstzweck sein, sondern
@@ -94,7 +93,7 @@ export default function MARKUP() {
             Google" von George Gilder.
           </MissionTextBox>
 
-          <MissionTextBox ID="3" heading={'2. Praxeologie '} direction={true}>
+          <MissionTextBox ID="3" heading={'PRAXEOLOGIE'} direction={true}>
             Die Praxologie liefert ein wichtiges tehoretisches Fundament meiner
             Arbeit, die von Carl Menger schon 1871 entwickelte subjektive Wert
             Theorie ist gerade heute in unserem digitalen Umfeld aktueller denn
@@ -164,6 +163,9 @@ export default function MARKUP() {
             die Strategien und Methoden anwendet.
             <br />
             <br />
+          </MissionTextBox>
+
+          <MissionTextBox ID="4" heading={'ETHIK'} direction={true}>
             Meinem eignen Gewissen folgend wende ich mein strategisches
             Rahmenwerk nur für Projekte an, die die folgenden Kriterien
             erfüllen:
@@ -180,14 +182,6 @@ export default function MARKUP() {
             <br />
             <br />
           </MissionTextBox>
-          <MissionTextBox ID="5" heading={'MEINE WERTE'} direction={true}>
-            - Ich begenge meinem Gegenüber auf Augenhöhe. - Das Leben ist ein
-            endloser Lernprozess. - Ich übernehme Verantwortung für meine
-            Resultate. - Technologie darf niemals Selbstzweck sein. -
-            Selbstreflektion hilft mir mich in die Sichtweise meines Gegenübers
-            hineinzuversetzen - Geistige Unabhänigkeit erlaubt es mir mich
-            selbst und meine Umgebung kritisch zu hinterfragen.
-          </MissionTextBox>
         </FlexBox>
       </Container>
       <Footer image="/art_01.png"></Footer>
@@ -202,6 +196,7 @@ const Wrapper = styled.div`
 
 const FlexBox = styled.div`
   padding-top: 10vh;
-  display: flex;
-  flex-direction: column;
+  width: 100%;
+  display: grid;
+  justify-content: center;
 `;

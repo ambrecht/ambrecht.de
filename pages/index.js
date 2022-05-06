@@ -4,7 +4,7 @@ import Container from '../components/Container';
 import HeroMessage from '../components/HeroMessage';
 import Background from '../components/Background';
 import Quote from '../components/Quote2';
-import Footer from '../components/Footer';
+import Footer from '../components/Footer2';
 import Heading from '../components/Heading';
 import Contact from '../components/ContactButton';
 import Link from 'next/link';
@@ -19,9 +19,10 @@ export default function Home() {
         <HeroMessage></HeroMessage>
         <Space></Space>
         <Quote autor="Tino Ambrecht" image={'/ich.png'} alttext="Tino Ambrecht">
-          Als ganzheitlicher Denker kombiniere ich Strategie, Design und
-          Technologie, um digitale Lösungen zu entwickeln, die den Kunden in den
-          Mittelpunkt stellen und einen Mehrwert schaffen.
+          Als Experte für die digitale Produktentwicklung, kombiniere ich
+          Strategie, Design und Technologie, um Lösungen zu entwickeln, die den
+          Kunden in den Mittelpunkt stellen und für diesen einen Mehrwert
+          schaffen.
         </Quote>
 
         <Heading>

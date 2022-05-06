@@ -33,6 +33,7 @@ export default function MARKUP({ image }) {
 
 const Wrapper = styled.div`
   font-weight: 300;
+  font-size: 2vh;
   position: relative;
   overflow: hidden;
   width: 99vw;

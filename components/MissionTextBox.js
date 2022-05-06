@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
+import Collapsible from 'react-collapsible';
 import React, {
   useRef,
   useEffect,
@@ -13,19 +14,20 @@ import Quote from '../components/Quote2';
 import { Gradient, MediaWidth } from '../Mixins/Mixins';
 import Footer from '../components/Footer';
 import Image from 'next/image';
+import Colapse from '../public/Ausklappen.svg';
 
 //MARKUP
 export default function MARKUP({ ID, heading, children, direction }) {
   return (
     <Section id={ID}>
-      <FlexBox>
-        <FlexBoxText direction={direction}>
-          <Text>
+      <Text>
+        <details>
+          <summary>
             <Heading>{heading}</Heading>
-            {children}
-          </Text>
-        </FlexBoxText>
-      </FlexBox>
+          </summary>
+          {children}
+        </details>
+      </Text>
     </Section>
   );
 }
@@ -38,13 +40,15 @@ const Text = styled.div`
   line-height: 1.4em;
   color: white;
   padding: 1em 0em 3em 5em;
+  text-align: center;
 
   display: block;
   ${MediaWidth}
 `;
 
 const Heading = styled.h1`
-  ${Gradient}
+  display: inline;
+  ${Gradient};
 `;
 
 const Section = styled.section``;
@@ -58,11 +62,14 @@ const FlexBox = styled.div`
 `;
 
 const FlexBoxText = styled.div`
-  padding-top: 10vh;
   display: flex;
-  flex-direction: ${(props) => (props.direction ? 'row' : 'row-reverse')};
+  flex-direction: column;
   justify-content: center;
   align-items: top;
+`;
+
+const Space = styled.div`
+  height: 1vh;
 `;
 
 const BildCon = styled.div`

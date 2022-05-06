@@ -11,10 +11,10 @@ export default function MARKUP(props) {
     <>
       <HeroH1 windowWidth={windowWidth}>
         Hier werden Ihre Produkte zum digitalen&nbsp;
-        <TextAnimation>Erfolg Erlebnis Abenteuer</TextAnimation>
+        <TextAnimation>Erfolg Erlebnis Ereignis Abenteuer!</TextAnimation>
       </HeroH1>
 
-      <HeroP>analytisches Denken trifft kreative Imagination...</HeroP>
+      <HeroP>analytisches Denken trifft auf kreative Imagination...</HeroP>
     </>
   );
 }
