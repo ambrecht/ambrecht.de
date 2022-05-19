@@ -13,7 +13,7 @@ export const Gradient = () => css`
 
 export const MediaWidth = () => css`
   @media (max-width: 768px) {
-    font-size: 1vh;
+    font-size: 2rem;
     padding-left: 0.5em;
     padding-right: 0.5em;
   }
