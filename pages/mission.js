@@ -9,7 +9,7 @@ import Quote from '../components/Quote2';
 import { Gradient, MediaWidth } from '../Mixins/Mixins';
 import Footer from '../components/Footer';
 import Image from 'next/image';
-import { fetchAPI } from '../lib/api';
+import { fetchAPI } from '../Lib/api';
 import ReactMarkdown from 'react-markdown';
 
 //LOGIC
