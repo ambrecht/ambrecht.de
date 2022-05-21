@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import Image from 'next/image';
 import Heading from './Heading';
 import { MediaWidth } from '../Mixins/Mixins';
@@ -11,7 +11,7 @@ export default function MARKUP() {
   return (
     <Wrapper>
       <Heading>Der Weg zum positiven Mehrwerterlebnis:</Heading>
-      <GridContainer>
+      <GridContainer direction="true">
         <Image
           src={'/Flow/Problem.svg'}
           alt="Desktop"
@@ -27,7 +27,13 @@ export default function MARKUP() {
           werden? Welche Wünsche, Bedürfnisse und Sehnsüchte hat die Zielgruppe?
         </Text>
       </GridContainer>
-      <GridContainer>
+      <GridContainer direction="false">
+        <Image
+          src={'/Flow/Vision.svg'}
+          alt="Desktop"
+          width="3000"
+          height="3000"
+        />
         <Text>
           <h1>Phase 2</h1>
           Im zweiten Schritt wird ein langfristiges und inspiriendes Leitbild
@@ -35,14 +41,8 @@ export default function MARKUP() {
           Maßnahmen ausgerichtet und abgestimmt. Es gilt hier auf den Punkt zu
           bringen, warum gibt es das Produkt und welchen Mehrwert bietet es.
         </Text>
-        <Image
-          src={'/Flow/Vision.svg'}
-          alt="Desktop"
-          width="3000"
-          height="3000"
-        />
       </GridContainer>
-      <GridContainer>
+      <GridContainer direction="true">
         <Image
           src={'/Flow/Ideen.svg'}
           alt="Desktop"
@@ -59,7 +59,13 @@ export default function MARKUP() {
           Nutzern zu testen.
         </Text>
       </GridContainer>
-      <GridContainer>
+      <GridContainer direction="false">
+        <Image
+          src={'/Flow/Implementieren.svg'}
+          alt="Desktop"
+          width="3000"
+          height="3000"
+        />
         <Text>
           <h1>Phase 4</h1>
           Im letzen Schritt, werden alle Daten ausgewertet, die technischen
@@ -68,12 +74,6 @@ export default function MARKUP() {
           technische Parameter zu übersetzen und immer wieder zu evaluieren und
           zu korrigieren.
         </Text>
-        <Image
-          src={'/Flow/Implementieren.svg'}
-          alt="Desktop"
-          width="3000"
-          height="3000"
-        />
       </GridContainer>
     </Wrapper>
   );
@@ -94,6 +94,12 @@ const GridContainer = styled.div`
   width: 100%;
   height: auto;
   flex-wrap: nowrap;
+  flex-direction: ${(props) =>
+    props.direction === 'true' ? 'row' : 'row-reverse'};
+
+  @media (max-width: 500px) {
+    flex-wrap: wrap;
+  }
 `;
 
 const Text = styled.span`

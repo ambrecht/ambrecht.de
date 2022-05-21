@@ -12,12 +12,6 @@ export default function MARKUP() {
       <Link href="/" passHref>
         <Bild src="/3DDREIECK.svg" alt="Logo" width={90} height={90}></Bild>
       </Link>
-      <Link href="/" passHref>
-        <Bild src="/3DDREIECK.svg" alt="Logo" width={90} height={90}></Bild>
-      </Link>
-      <Link href="/" passHref>
-        <Bild src="/3DDREIECK.svg" alt="Logo" width={90} height={90}></Bild>
-      </Link>
     </Footer>
   );
 }

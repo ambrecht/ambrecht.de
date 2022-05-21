@@ -83,6 +83,7 @@ const Footerbox = styled.div`
   justify-content: space-between;
   align-items: center;
   align-content: space-around;
+  flex-wrap: wrap;
 
   color: white;
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.9);

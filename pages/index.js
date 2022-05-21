@@ -4,7 +4,7 @@ import Container from '../components/Container';
 import HeroMessage from '../components/HeroMessage';
 import Background from '../components/Background';
 import Quote from '../components/Quote2';
-import Footer from '../components/Footer2';
+import Footer from '../components/Footer';
 import Heading from '../components/Heading';
 import Contact from '../components/ContactButton';
 import Link from 'next/link';

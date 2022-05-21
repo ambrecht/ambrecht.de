@@ -10,12 +10,12 @@ import { Gradient, MediaWidth } from '../Mixins/Mixins';
 import Footer from '../components/Footer';
 import Image from 'next/image';
 import { fetchAPI } from '../lib/api';
+import ReactMarkdown from 'react-markdown';
 
 //LOGIC
 
 //MARKUP
 export default function MARKUP({ missiontext }) {
-  console.log(missiontext.data);
   return (
     <Wrapper>
       <Container>
@@ -30,15 +30,17 @@ export default function MARKUP({ missiontext }) {
           Seele wieder aufleuchten, zieht sie durch den Körper hinauf und
           verwandelt ihn ganz in wahres Sein.
         </Quote>
-        <FlexBox>
-          {missiontext.data.map((box) => {
-            return (
-              <MissionTextBox ID={box.id} heading={box.attributes.headline}>
-                {box.attributes.content}
-              </MissionTextBox>
-            );
-          })}
-        </FlexBox>
+        <div>
+          <FlexBox>
+            {missiontext.data.map((box) => {
+              return (
+                <MissionTextBox ID={box.id} heading={box.attributes.headline}>
+                  <ReactMarkdown>{box.attributes.content}</ReactMarkdown>
+                </MissionTextBox>
+              );
+            })}
+          </FlexBox>
+        </div>
       </Container>
       <Footer image="/art_01.png"></Footer>
     </Wrapper>
@@ -47,20 +49,20 @@ export default function MARKUP({ missiontext }) {
 
 export async function getStaticProps() {
   const res = await fetchAPI('/artikels');
-  console.log(res);
-
   return { props: { missiontext: res } };
 }
 
 //STYLE
 const Wrapper = styled.div`
-  width: 100vw;
   background-color: #293133;
 `;
 
 const FlexBox = styled.div`
-  padding-top: 10vh;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   align-items: center;
+  align-content: center;
+  width: 95%;
 `;
