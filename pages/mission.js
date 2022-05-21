@@ -4,12 +4,11 @@ import Navigation from '../components/Navigation';
 import React, { useRef, useEffect, useState, useCallback } from 'react';
 import Container from '../components/Container';
 import MissionTextBox from '../components/MissionTextBox';
-import TableOfContents from '../components/tableOfContents/tableofContents';
+
 import Quote from '../components/Quote2';
-import { Gradient, MediaWidth } from '../Mixins/Mixins';
+
 import Footer from '../components/Footer';
-import Image from 'next/image';
-import { fetchAPI } from '../api';
+
 import ReactMarkdown from 'react-markdown';
 
 //LOGIC
@@ -48,8 +47,12 @@ export default function MARKUP({ missiontext }) {
 }
 
 export async function getStaticProps() {
-  const res = await fetchAPI('/artikels');
-  return { props: { missiontext: res } };
+  const requestUrl = 'https://fast-tor-61669.herokuapp.com/api/artikels';
+
+  const response = await fetch(requestUrl);
+  const data = await response.json();
+
+  return { props: { missiontext: data } };
 }
 
 //STYLE
