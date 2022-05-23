@@ -64,8 +64,8 @@ const FlexBox = styled.div`
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
+  justify-content: center;
+  align-items: baseline;
   align-content: center;
-  width: 95%;
+  width: 100%;
 `;
