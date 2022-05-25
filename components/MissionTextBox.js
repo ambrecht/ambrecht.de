@@ -33,7 +33,7 @@ export default function MARKUP({ ID, heading, children, direction }) {
 //STYLE
 
 const Text = styled.div`
-  max-width: 100%;
+  max-width: 600px;
   font-size: 1em;
   line-height: 1.4em;
   color: white;
@@ -48,7 +48,8 @@ const Text = styled.div`
 const Heading = styled.h1`
   display: inline;
   text-align: block;
-  max-width: 80%;
+  max-inline-size: 60ch;
+
   ${Gradient};
   ${MediaWidth};
 `;
