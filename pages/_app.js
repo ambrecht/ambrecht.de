@@ -5,6 +5,8 @@ import HeadMeta from '../components/HeadMeta';
 const GlobalStyle = createGlobalStyle`
   :root {
 
+     --measure: 60ch;
+
 
     
     font-family: 'Poppins', sans-serif;
@@ -12,12 +14,16 @@ const GlobalStyle = createGlobalStyle`
     margin: 0 auto;
     box-sizing: border-box;
     letter-spacing: 0.1em;
+   
+   
+    
     
 
       
 
 
   }
+
 
 
 `;
