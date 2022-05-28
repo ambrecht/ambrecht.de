@@ -1,20 +1,6 @@
 import styled from 'styled-components';
-
-import Collapsible from 'react-collapsible';
-import React, {
-  useRef,
-  useEffect,
-  useState,
-  useCallback,
-  Children,
-} from 'react';
-import Container from '../components/Container';
-
-import Quote from '../components/Quote2';
+import React from 'react';
 import { Gradient, MediaWidth } from '../Mixins/Mixins';
-import Footer from '../components/Footer';
-import Image from 'next/image';
-import Colapse from '../public/Ausklappen.svg';
 
 //MARKUP
 export default function MARKUP({ ID, heading, children, direction }) {
@@ -49,7 +35,6 @@ const Heading = styled.h1`
   display: inline;
   text-align: block;
   max-inline-size: 60ch;
-
   ${Gradient};
   ${MediaWidth};
 `;

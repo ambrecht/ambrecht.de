@@ -26,7 +26,7 @@ export default function Home() {
           schaffen.
         </Quote>
         <Flexbox>
-          <MissionTextBox heading="Wie ich Ihnen mit meinem Service helfen kann.">
+          <MissionTextBox2 heading="Wie ich Ihnen mit meinem Service helfen kann.">
             <p>
               In der digitalen Produktentwicklung werden die Bereiche Research,
               Strategie, UX-Design, Softwarearchitektur, Technologie und
@@ -45,11 +45,11 @@ export default function Home() {
             dabei Ihre Ziele zu erreichen. Am Ende liefern Sie ein erfolgreiches
             digitales Produkt aus. Und ich unterstützen Sie von der
             Markteinführung bis zur Aktualisierung.
-          </MissionTextBox>
+          </MissionTextBox2>
 
-          <MissionTextBox heading="Wann brauchen Sie eines Spezialisten und wann sollten Sie einen Generalisten konsultieren?">
+          <MissionTextBox2 heading="Wann brauchen Sie einen Spezialisten und wann sollten Sie einen Generalisten konsultieren?">
             <p>
-              Ich vergleiche das gerne mit dem Bereich der Medizin, wenn Sie ein
+              Ein Vergleich aus dem Bereich der Medizin: Wenn Sie ein
               spezifisches Problem mit Ihrem Herzen haben, kann Ihnen kein
               Generalist helfen Sie brauchen einen Spezialisten der sein Leben
               lang nichts anderes als das menschliche Herz studiert hat.
@@ -76,7 +76,7 @@ export default function Home() {
             einerseits technisches Fachwissen und analytische Fähigkeiten
             besitzt und andererseits ein intuitives Gespür für die ganzheitliche
             Entwicklung von Produkten besitzt.
-          </MissionTextBox>
+          </MissionTextBox2>
         </Flexbox>
 
         <Heading>
@@ -92,6 +92,8 @@ export default function Home() {
     </Wrapper>
   );
 }
+
+const MissionTextBox2 = styled(MissionTextBox)``;
 
 const Flexbox = styled.div`
   display: flex;
