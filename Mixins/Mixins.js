@@ -9,6 +9,7 @@ export const Gradient = () => css`
   -webkit-background-clip: text;
   background-size: 100%;
   -webkit-text-fill-color: transparent;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 5));
 `;
 
 export const MediaWidth = () => css`
