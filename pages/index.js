@@ -93,11 +93,15 @@ export default function Home() {
   );
 }
 
-const MissionTextBox2 = styled(MissionTextBox)``;
+const MissionTextBox2 = styled(MissionTextBox)`
+  display: none;
+`;
 
 const Flexbox = styled.div`
   display: flex;
   flex-wrap: wrap;
+  max-inline-size: 60ch;
+  margin-inline: auto;
 `;
 
 const Wrapper = styled.div`

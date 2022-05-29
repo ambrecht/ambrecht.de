@@ -35,11 +35,11 @@ const HeroH1 = styled.h1`
 
   overflow: none;
 
-  @media (max-width: 768px) {
+  @media (max-width: 300px) {
     font-size: 15vw;
   }
 
-  @media (max-height: 600px) {
+  @media only screen and (max-height: 700px) {
     font-size: 12vh;
     width: 61.8vw;
   }
@@ -56,7 +56,9 @@ const HeroP = styled.h4`
   z-index: 10;
   font-weight: 100;
 
-  @media (max-height: 600px) {
-    font-size: 6vh;
+  @media only screen and (max-height: 700px) {
+    font-size: 5vh;
+    font-weight: 200;
+    width: 61.8vw;
   }
 `;

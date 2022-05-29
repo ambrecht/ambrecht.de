@@ -22,6 +22,7 @@ export default function Metatags({
       <meta property="og:description" content={description} />
       <meta property="og:image" content={image} />
       <meta name="robots" content="all" />
+      <meta name="viewport" content="width=device-width,initial-scale=1" />
     </Head>
   );
 }

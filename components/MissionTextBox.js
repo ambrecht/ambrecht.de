@@ -37,4 +37,5 @@ const Heading = styled.h1`
   max-inline-size: 60ch;
   ${Gradient};
   ${MediaWidth};
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 5));
 `;
