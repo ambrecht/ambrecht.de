@@ -49,12 +49,15 @@ const Overlay = styled.div`
 `;
 
 const Title = styled.h1`
+  font-size: 2vw;
+  max-width: 100%;
+  word-wrap: break-word;
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  overflow: auto;
+  overflow: hidden;
   display: flex;
   align-content: center;
   justify-content: center;
@@ -66,7 +69,9 @@ const Title = styled.h1`
   color: white;
 `;
 
-const Bild = styled(Image)``;
+const Bild = styled(Image)`
+  max-width: 100%;
+`;
 
 const Box = styled.div`
   position: relative;
