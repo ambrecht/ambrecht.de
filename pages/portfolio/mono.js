@@ -48,6 +48,7 @@ export async function getStaticProps() {
 //STYLE
 const Wrapper = styled.div`
   background-color: #293133;
+  overflow: hidden;
 `;
 
 const Space = styled.div`
@@ -74,7 +75,8 @@ const Text = styled.div`
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 34%;
+    max-height: 66vh;
+    max-width: 100%;
   }
 `;
 
