@@ -38,6 +38,11 @@ export default function MARKUP() {
             title="Real Virtual"
             link="virtual"
           ></BoxItem>
+          <BoxItem
+            image="/logo4444.jpg"
+            title="Cafe der 16 Persönlichkeiten"
+            link="cafe"
+          ></BoxItem>
         </FlexBox>
 
         <Heading>Schauen Sie sich in meiner Werkstatt um:</Heading>
