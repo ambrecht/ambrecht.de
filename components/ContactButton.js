@@ -37,7 +37,7 @@ const Button = styled.button`
     linear-gradient(101deg, #2393ff, #5f1df2);
   background-origin: border-box;
   background-clip: content-box, border-box;
-  box-shadow: 2px 1000px 1px white inset;
+  box-shadow: 2em 100em 1em white inset;
   transition-property: all;
   transition-duration: 0.5s;
 

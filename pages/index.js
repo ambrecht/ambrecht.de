@@ -46,37 +46,6 @@ export default function Home() {
             digitales Produkt aus. Und ich unterstützen Sie von der
             Markteinführung bis zur Aktualisierung.
           </MissionTextBox2>
-
-          <MissionTextBox2 heading="Wann brauchen Sie einen Spezialisten und wann sollten Sie einen Generalisten konsultieren?">
-            <p>
-              Ein Vergleich aus dem Bereich der Medizin: Wenn Sie ein
-              spezifisches Problem mit Ihrem Herzen haben, kann Ihnen kein
-              Generalist helfen Sie brauchen einen Spezialisten der sein Leben
-              lang nichts anderes als das menschliche Herz studiert hat.
-            </p>
-            <p>
-              Wenn Sie sich allerdings nur unwohlfühlen, diffuse Schmerzen haben
-              und lethargisch sind ohne einen klaren Grund dafür zu erkennen,
-              dann brauchen Sie einen Generalisten einen ganzheitlichen
-              Mediziner, der im besten Falle noch eine psychologische Ausbildung
-              hat.
-            </p>
-            <p>
-              Ähnlich ist es im Bereich der Webentwicklung, wenn Ihr Unternehmen
-              ein spezifisches Problem mit der Implementierung einer ASP.NET API
-              hat brauchen Sie einen Spezialisten der sich mit nichts anderem
-              als Microsoftinfrastruktur beschäftigt.
-            </p>
-            Wenn Sie allerdings bereits ein Team aus Spezialisten haben, aber
-            trotzdem nicht die gewünschten Ziele erreichen, weil die
-            UX-Strategie Ihrer Webseite nicht funktioniert, Sie Ihre
-            Unternehmensprinzipien nicht klar kommunizieren oder aber sogar
-            potentielle Marktchancen übersehen. Dann brauch Sie jemanden wie
-            mich, einen Generalisten, einen flexiblen Problemlöser, der
-            einerseits technisches Fachwissen und analytische Fähigkeiten
-            besitzt und andererseits ein intuitives Gespür für die ganzheitliche
-            Entwicklung von Produkten besitzt.
-          </MissionTextBox2>
         </Flexbox>
 
         <Heading>

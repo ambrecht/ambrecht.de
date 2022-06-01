@@ -66,6 +66,7 @@ const Text = styled.div`
   display: block;
   position: relative;
   right: 0;
+  max-width: 1300px;
 
   strong {
     ${Gradient}

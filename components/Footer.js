@@ -86,7 +86,7 @@ const Footerbox = styled.div`
   flex-wrap: wrap;
 
   color: white;
-  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.9);
+  text-shadow: 0em 2em 2em rgba(0, 0, 0, 0.9);
 `;
 
 const ABSOLUT = styled.div`
