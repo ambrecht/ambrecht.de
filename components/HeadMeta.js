@@ -18,9 +18,9 @@ export default function Metatags({
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;800&display=swap"
         rel="stylesheet"
       />
-      <meta property="og:title" content={title} />
-      <meta property="og:description" content={description} />
-      <meta property="og:image" content={image} />
+      <meta property="title" content={title} />
+      <meta property="description" content={description} />
+      <meta property="image" content={image} />
       <meta name="robots" content="all" />
 
       <meta name="viewport" content="width=device-width,initial-scale=1.0" />
