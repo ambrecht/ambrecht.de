@@ -19,12 +19,14 @@ export default function Home() {
         <Navigation></Navigation>
         <HeroMessage></HeroMessage>
         <Space></Space>
+
         <Quote autor="Tino Ambrecht" image={'/ich.png'} alttext="Tino Ambrecht">
           Als Experte für die digitale Produktentwicklung, kombiniere ich
           Strategie, Design und Technologie, um Lösungen zu entwickeln, die den
           Kunden in den Mittelpunkt stellen und für diesen einen Mehrwert
           schaffen.
         </Quote>
+
         <Flexbox>
           <MissionTextBox2 heading="Wie ich Ihnen mit meinem Service helfen kann.">
             <p>
@@ -75,6 +77,10 @@ const Flexbox = styled.div`
 
 const Wrapper = styled.div`
   overflow: hidden;
+`;
+
+const Wrapper2 = styled.div`
+  background-color: red;
 `;
 
 const Space = styled.div`

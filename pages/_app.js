@@ -10,10 +10,12 @@ const GlobalStyle = createGlobalStyle`
 
     
     font-family: 'Poppins', sans-serif;
-    font-size:  clamp(1.3rem,1.4vw,2.3rem);;
+    font-size:  clamp(1.3rem,1.4vw,2.3rem);
     margin: 0 auto;
     box-sizing: border-box;
     letter-spacing: 0.1em;
+
+  
    
    
     

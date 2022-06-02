@@ -32,10 +32,17 @@ const Text = styled.div`
 `;
 
 const Heading = styled.h1`
+  font-size: 1.5em;
+  line-height: 1em;
   display: inline;
   text-align: block;
   max-inline-size: 60ch;
   ${Gradient};
   ${MediaWidth};
   filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 5));
+
+  :hover {
+    text-decoration: underline white;
+    cursor: pointer;
+  }
 `;
