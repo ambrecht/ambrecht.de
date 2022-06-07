@@ -49,6 +49,14 @@ export async function getStaticProps() {
 const Wrapper = styled.div`
   background-color: #293133;
   overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+  align-content: center;
+  width: 100%;
 `;
 
 const Space = styled.div`

@@ -19,9 +19,9 @@ export default function MARKUP({ ID, heading, children, direction }) {
 //STYLE
 
 const Text = styled.div`
-  max-width: 600px;
+  max-width: 1000px;
   font-size: 1em;
-  line-height: 1.4em;
+  line-height: 1.5em;
   color: white;
   padding: 1em 0em 3em 5em;
   text-align: block;
@@ -32,6 +32,7 @@ const Text = styled.div`
 `;
 
 const Heading = styled.h1`
+  text-transform: lowercase;
   font-size: 1.5em;
   line-height: 1em;
   display: inline;
@@ -43,6 +44,7 @@ const Heading = styled.h1`
 
   :hover {
     text-decoration: underline white;
+
     cursor: pointer;
   }
 `;

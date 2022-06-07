@@ -2,14 +2,13 @@ import Head from 'next/head';
 
 export default function Metatags({
   title = 'Digitale Produktentwicklung',
-  description = 'Mit Technologie, Strategie und Design Probleme lösen, Werte schaffen und Menschen erreichen.',
   image = '/public/3DDREIECK.svg',
 }) {
   return (
     <Head>
-      <title>{title}</title>
+      <title>'Digitale Produktentwicklung'</title>
       <meta charSet="utf-8" />
-      <title>Ambrecht.de</title>
+      <title>ambrecht.de</title>
       <link rel="shortcut icon" href="/favicon2.ico" />
       <link rel="canonical" href="http://mysite.com/example" />
       <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,7 +18,10 @@ export default function Metatags({
         rel="stylesheet"
       />
       <meta property="title" content={title} />
-      <meta property="description" content={description} />
+      <meta
+        property="description"
+        content="Mit Technologie, Strategie und Design Probleme lösen, Werte schaffen und Menschen erreichen."
+      />
       <meta property="image" content={image} />
       <meta name="robots" content="all" />
 

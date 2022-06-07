@@ -19,10 +19,10 @@ const Text = styled.span`
   background: linear-gradient(to right, #2393ff 0%, #5f1df2 100%);
   color: transparent;
   -webkit-background-clip: text;
-  text-transform: capitalize;
   font-weight: 600;
   line-height: 1em;
   letter-spacing: 0.1em;
+  text-transform: lowercase;
 `;
 const Button = styled.button`
   cursor: inherit;
@@ -40,6 +40,7 @@ const Button = styled.button`
   box-shadow: 2em 100em 1em white inset;
   transition-property: all;
   transition-duration: 0.5s;
+  text-transform: lowercase;
 
   &:hover {
     box-shadow: none;

@@ -12,7 +12,7 @@ export default function MARKUP({ image }) {
       <Footer image={image}></Footer>
       <ABSOLUT>
         <Footerbox>
-          <Bild src="/3DDREIECK.svg" alt="Logo" width={150} height={250}></Bild>
+          <Bild src="/3DDREIECK.svg" alt="Logo" width={250} height={250}></Bild>
           <span>
             Tino Ambrecht <br />
             Neue Bahnhofstr. 26 <br />
@@ -33,7 +33,7 @@ export default function MARKUP({ image }) {
 
 const Wrapper = styled.div`
   font-weight: 300;
-  font-size: 2vh;
+  font-size: 1em;
   position: relative;
   overflow: hidden;
   width: 99vw;

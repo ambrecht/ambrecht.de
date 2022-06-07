@@ -1,14 +1,20 @@
-myAudio = new Audio('someSound.ogg');
-if (typeof myAudio.loop == 'boolean') {
-  myAudio.loop = true;
-} else {
-  myAudio.addEventListener(
-    'ended',
-    function () {
-      this.currentTime = 0;
-      this.play();
-    },
-    false,
+import { useState, useEffect } from 'react';
+
+export default function Player({ children }, { url }) {
+  const [audio, setAudio] = useState(null);
+
+  useEffect(() => {
+    setAudio(new Audio(url));
+  }, []);
+
+  return (
+    <button
+      onClick={() => {
+        audio.loop = true;
+        audio?.play();
+      }}
+    >
+      {children}
+    </button>
   );
 }
-myAudio.play();

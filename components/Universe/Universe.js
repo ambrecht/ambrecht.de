@@ -84,7 +84,8 @@ export default App;
 
 const UniverseContainer = styled.div`
   canvas {
-  width: 100vw;
-  height: 120vh;
-  overflow: hidden;
+    width: 100vw;
+    height: 120vh;
+    overflow: hidden;
+  }
 `;

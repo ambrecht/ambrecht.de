@@ -11,7 +11,7 @@ export default function MARKUP(props) {
     <>
       <HeroH1 windowWidth={windowWidth}>
         Hier werden Ihre Produkte zum digitalen&nbsp;
-        <TextAnimation>Erfolg Erlebnis Ereignis Abenteuer!</TextAnimation>
+        <TextAnimation>Erfolg Erlebnis </TextAnimation>
       </HeroH1>
 
       <HeroP>analytisches Denken trifft auf kreative Imagination...</HeroP>
@@ -55,6 +55,7 @@ const HeroP = styled.h4`
   text-align: center;
   z-index: 10;
   font-weight: 100;
+  text-transform: lowercase;
 
   @media only screen and (max-height: 700px) {
     font-size: 5vh;
