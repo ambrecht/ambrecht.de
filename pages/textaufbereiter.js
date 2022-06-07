@@ -41,6 +41,7 @@ export default function MARKUP() {
   const [inputValue, setInputValue] = useState('');
   const [edited, setEdited] = useState('');
   const [count, setCount] = useState(0);
+  const [schema, setSchema] = useState(true);
 
   useEffect(() => {
     const Remove = BreakRemove(inputValue);
@@ -55,9 +56,9 @@ export default function MARKUP() {
   return (
     <Wrapper>
       <Head>
-        <title>'Digitale Produktentwicklung'</title>
+        <title>'Textaufbereiter'</title>
         <meta charSet="utf-8" />
-        <title>ambrecht.de</title>
+        <title>Textaufbereiter</title>
         <link rel="shortcut icon" href="/favicon2.ico" />
         <link rel="canonical" href="http://mysite.com/example" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -114,7 +115,15 @@ export default function MARKUP() {
             label="Deepl Translator"
           ></Button>
         </ButtonBox>
-        ;<Output>{edited}</Output>
+
+        <Heading>Der Text in Schönschrift:</Heading>
+        <OutputBox>
+          <Button
+            onClick={(e) => setSchema(!schema)}
+            label="Farbschema invertieren"
+          ></Button>
+          <Output schema={schema}>{edited}</Output>
+        </OutputBox>
       </Container>
       <Footer image="/art_01.png"></Footer>
     </Wrapper>
@@ -151,8 +160,23 @@ const TextInput = styled.textarea`
   }
 `;
 const Output = styled.p`
+  flex-grow: 5;
   box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.2);
   color: rgba(255, 255, 255, 1);
+  --color-text: ${(props) => (props.schema == true ? '#f4f4f4' : '#293133')};
+  --color-bg: ${(props) => (props.schema == true ? '#293133' : '#f4f4f4')};
+  font-family: 'Libre Caslon Text', serif;
+  font-size: clamp(50%, calc(100% + 2vw), 100%);
+  color: var(--color-text);
+  margin-block: 0 10vmin;
+  font-weight: 700;
+  text-indent: 2ch;
+  word-break: normal;
+  hyphens: auto;
+  padding: 1em;
+
+  line-height: 1.4;
+  background-color: var(--color-bg);
 `;
 
 const WordCounter = styled.p`
@@ -181,6 +205,13 @@ const ButtonBox = styled.div`
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+`;
+
+const OutputBox = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: baseline;
 `;
 
 const CounterBox = styled.div`
