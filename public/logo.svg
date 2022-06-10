@@ -7,8 +7,8 @@
 <g id="Hero_2_" transform="translate(-650.192 -296.123)">
 	
 		<linearGradient id="Exclusion_1_1_" gradientUnits="userSpaceOnUse" x1="974.3563" y1="45.0512" x2="974.3563" y2="46.0204" gradientTransform="matrix(38.778 0 0 32.872 -36988.7227 -1136.4707)">
-		<stop  offset="0" style="stop-color:#2393FF"/>
-		<stop  offset="1" style="stop-color:#5F1DF2"/>
+		<stop  offset="0" style="stop-color: rgba(0, 130, 255, 1)"/>
+		<stop  offset="1" style="stop-color: rgba(79, 5, 245, 1)"/>
 	</linearGradient>
 	<path id="Exclusion_1_2_" style="fill:url(#Exclusion_1_1_);" d="M814.21,376.363h-38.778l19.392-31.873l19.388,31.873l0,0H814.21z
 		 M794.823,352.189l-11.81,19.934h23.619L794.823,352.189z"/>

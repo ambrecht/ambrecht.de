@@ -17,9 +17,7 @@ export default function ContactButton({ children, fontsize }) {
 //STYLE
 
 const Text = styled.span`
-  background: linear-gradient(to right, #2393ff 0%, #5f1df2 100%);
-  color: transparent;
-  -webkit-background-clip: text;
+  ${TextGradient}
   font-weight: 600;
   line-height: 1em;
   letter-spacing: 0.1em;

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import GradientText from '../Mixins/Mixins';
+import { TextGradient, MediaWidth, ButtonGradient } from '../Mixins/Mixins';
 
 //LOGIC
 const LOGIC = () => {};
@@ -58,14 +58,7 @@ const Text = styled.span`
     letter-spacing: 0.01em;
     word-spacing: -0.2em;
 
-    background-image: linear-gradient(
-      45deg,
-      rgba(35, 147, 255, 1) 35%,
-      rgba(95, 29, 242, 1) 100%
-    );
-    -webkit-background-clip: text;
-    background-size: 100%;
-    -webkit-text-fill-color: transparent;
+    ${TextGradient};
 
     @media (max-width: 768px) {
       font-size: 1rem;
@@ -75,14 +68,7 @@ const Text = styled.span`
   h2 {
     font-size: 2rem;
     display: inline;
-    background-image: linear-gradient(
-      45deg,
-      rgba(35, 147, 255, 1) 35%,
-      rgba(95, 29, 242, 1) 100%
-    );
-    -webkit-background-clip: text;
-    background-size: 100%;
-    -webkit-text-fill-color: transparent;
+    ${TextGradient};
   }
   @media (max-width: 768px) {
     font-size: 1rem;

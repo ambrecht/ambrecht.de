@@ -1,6 +1,7 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import Typewriter from 'typewriter-effect';
+import { TextGradient, MediaWidth, ButtonGradient } from '../Mixins/Mixins';
 
 export default function TextAnimation(props) {
   return (
@@ -20,14 +21,6 @@ export default function TextAnimation(props) {
 
 const Wrapper = styled.span`
   display: inline-block;
-  text-shadow: none;
-  background-image: linear-gradient(
-    72.61deg,
-    rgba(35, 147, 255, 1) 22.63%,
-    rgba(95, 29, 242, 1) 84.67%
-  );
-  -webkit-background-clip: text;
-  background-size: 100%;
-  -webkit-text-fill-color: transparent;
+  ${TextGradient};
   filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 5));
 `;

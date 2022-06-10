@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 import Image from 'next/image';
 import Heading from './Heading';
-import { MediaWidth } from '../Mixins/Mixins';
+import { MediaWidth, Gradient } from '../Mixins/Mixins';
 
 //LOGIC
 const LOGIC = () => {};
@@ -124,7 +124,7 @@ const Text = styled.span`
     letter-spacing: 0.01em;
     word-spacing: -0.2em;
 
-    background-image: linear-gradient(to right, #2393ff 0%, #5f1df2 100%);
+    background-image: ${Gradient};
     -webkit-background-clip: text;
     background-size: 100%;
     -webkit-text-fill-color: transparent;

@@ -10,6 +10,13 @@ export default function InputButton({ label, onClick }) {
 }
 
 //STYLE
+const Text = styled.span`
+  text-transform: lowercase;
+  font-weight: 600;
+  line-height: 1em;
+  letter-spacing: 0.1em;
+  ${TextGradient};
+`;
 
 const Button = styled.button`
   cursor: inherit;
@@ -21,13 +28,8 @@ const Button = styled.button`
 
   &:hover {
     box-shadow: none;
+    ${Text} {
+      color: white;
+    }
   }
-`;
-
-const Text = styled.span`
-  text-transform: lowercase;
-  font-weight: 600;
-  line-height: 1em;
-  letter-spacing: 0.1em;
-  ${TextGradient};
 `;

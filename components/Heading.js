@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { TextGradient, MediaWidth, ButtonGradient } from '../Mixins/Mixins';
 
 //LOGIC
 const LOGIC = () => {};
@@ -22,10 +23,7 @@ const Wrapper = styled.h1`
 
   letter-spacing: 0.01em;
 
-  background-image: linear-gradient(to right, #2393ff 0%, #5f1df2 100%);
-  -webkit-background-clip: text;
-  background-size: 100%;
-  -webkit-text-fill-color: transparent;
+  ${TextGradient};
 
   @media (max-width: 768px) {
     font-size: 1rem;
