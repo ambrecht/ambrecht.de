@@ -6,6 +6,7 @@ import Heading from '../components/Heading';
 import Footer from '../components/Footer';
 import Button from '../components/Button';
 import Head from 'next/head';
+import { TextGradient, MediaWidth } from '../Mixins/Mixins';
 
 //LOGIC
 
@@ -42,6 +43,7 @@ export default function MARKUP() {
   const [edited, setEdited] = useState('');
   const [count, setCount] = useState(0);
   const [schema, setSchema] = useState(true);
+  const [size, setSize] = useState(12);
 
   useEffect(() => {
     const Remove = BreakRemove(inputValue);
@@ -117,12 +119,23 @@ export default function MARKUP() {
         </ButtonBox>
 
         <Heading>Der Text in Schönschrift:</Heading>
+        <FontInput
+          type="number"
+          min="4"
+          step="0.5"
+          max="32"
+          value={size}
+          onChange={(e) => setSize(e.target.value)}
+        />
         <OutputBox>
           <Button
             onClick={(e) => setSchema(!schema)}
             label="Farbschema invertieren"
           ></Button>
-          <Output schema={schema}>{edited}</Output>
+
+          <Output size={size} schema={schema}>
+            {edited}
+          </Output>
         </OutputBox>
       </Container>
       <Footer image="/art_01.png"></Footer>
@@ -133,6 +146,8 @@ export default function MARKUP() {
 const Wrapper = styled.div`
   background-color: #293133;
 `;
+
+const FontInput = styled.input``;
 
 const TextInput = styled.textarea`
   flex-grow: 5;
@@ -160,13 +175,15 @@ const TextInput = styled.textarea`
   }
 `;
 const Output = styled.p`
+  size: 7in 9.25in;
+  margin: 27mm 16mm 27mm 16mm;
   flex-grow: 5;
   box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.2);
   color: rgba(255, 255, 255, 1);
   --color-text: ${(props) => (props.schema == true ? '#f4f4f4' : '#293133')};
   --color-bg: ${(props) => (props.schema == true ? '#293133' : '#f4f4f4')};
   font-family: 'Libre Caslon Text', serif;
-  font-size: clamp(50%, calc(100% + 2vw), 100%);
+  font-size: ${(props) => `${props.size}px`};
   color: var(--color-text);
   margin-block: 0 10vmin;
   font-weight: 700;
@@ -177,6 +194,7 @@ const Output = styled.p`
 
   line-height: 1.4;
   background-color: var(--color-bg);
+  page-break-after: always;
 `;
 
 const WordCounter = styled.p`

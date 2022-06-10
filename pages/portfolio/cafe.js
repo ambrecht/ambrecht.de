@@ -6,7 +6,7 @@ import Background from '../../components/Background';
 import Footer from '../../components/Footer';
 import styled from 'styled-components';
 import ReactMarkdown from 'react-markdown';
-import { Gradient, MediaWidth } from '../../Mixins/Mixins';
+import { TextGradient, MediaWidth } from '../../Mixins/Mixins';
 
 //LOGIC
 const LOGIC = () => {};
@@ -76,7 +76,7 @@ const Text = styled.div`
   right: 0;
 
   strong {
-    ${Gradient}
+    ${TextGradient}
   }
 
   img {
@@ -92,6 +92,6 @@ const Headline = styled.h1`
   display: inline;
   text-align: block;
   max-inline-size: 60ch;
-  ${Gradient};
+  ${TextGradient};
   ${MediaWidth};
 `;

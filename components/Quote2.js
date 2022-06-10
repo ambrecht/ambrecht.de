@@ -1,6 +1,6 @@
 import { Children } from 'react';
 import styled from 'styled-components';
-import { Gradient, MediaWidth } from '../Mixins/Mixins';
+import { TextGradient, MediaWidth } from '../Mixins/Mixins';
 import Image from 'next/image';
 
 //LOGIC
@@ -99,7 +99,7 @@ const Autor = styled.p`
   font-weight: 400;
   text-shadow: none;
 
-  ${Gradient}
+  ${TextGradient}
   text-align: center;
   ${MediaWidth}
   @media (max-width: 1300px) {

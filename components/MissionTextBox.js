@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import React from 'react';
-import { Gradient, MediaWidth } from '../Mixins/Mixins';
+import { TextGradient, MediaWidth } from '../Mixins/Mixins';
 
 //MARKUP
 export default function MARKUP({ ID, heading, children, direction }) {
@@ -38,7 +38,7 @@ const Heading = styled.h1`
   display: inline;
   text-align: block;
   max-inline-size: 60ch;
-  ${Gradient};
+  ${TextGradient};
   ${MediaWidth};
   filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 5));
 

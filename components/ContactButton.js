@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { TextGradient, MediaWidth, ButtonGradient } from '../Mixins/Mixins';
 
 //LOGIC
 
@@ -30,17 +31,7 @@ const Button = styled.button`
   padding: 1em 1.5em;
   border-radius: 3em;
   border: solid 0.2em transparent;
-  background-image: linear-gradient(
-      rgba(255, 255, 255, 0),
-      rgba(255, 255, 255, 0)
-    ),
-    linear-gradient(101deg, #2393ff, #5f1df2);
-  background-origin: border-box;
-  background-clip: content-box, border-box;
-  box-shadow: 2em 100em 1em white inset;
-  transition-property: all;
-  transition-duration: 0.5s;
-  text-transform: lowercase;
+  ${ButtonGradient};
 
   &:hover {
     box-shadow: none;

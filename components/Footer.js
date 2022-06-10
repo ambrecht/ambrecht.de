@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Gradient, MediaWidth } from '../Mixins/Mixins';
+import { TextGradient, MediaWidth } from '../Mixins/Mixins';
 import Image from 'next/image';
 
 //LOGIC
@@ -96,5 +96,5 @@ const ABSOLUT = styled.div`
 `;
 
 const GradientSpan = styled.span`
-  ${Gradient}
+  ${TextGradient}
 `;

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Gradient, MediaWidth } from '../../Mixins/Mixins';
+import { TextGradient, MediaWidth } from '../../Mixins/Mixins';
 
 //LOGIC
 const LOGIC = () => {};
@@ -44,7 +44,7 @@ const StyledMenu = styled.nav`
     transition: color 0.3s linear;
 
     &:hover {
-      ${Gradient}
+      ${TextGradient}
       text-transform: capitalize;
     }
   }

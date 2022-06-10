@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Ich from '../public/ich.png';
 import Unterschrift from '../public/unterschrift.png';
 import Quote from './Quote2';
-import { Gradient, MediaWidth } from '../Mixins/Mixins';
+import { TextGradient, MediaWidth } from '../Mixins/Mixins';
 
 //LOGIC
 const LOGIC = () => {};
@@ -129,7 +129,7 @@ const Text = styled.span`
     font-weight: 300;
 
     letter-spacing: 0.01em;
-    ${Gradient}
+    ${TextGradient}
 
     ${MediaWidth}
   }
