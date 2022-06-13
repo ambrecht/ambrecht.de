@@ -7,6 +7,7 @@ export default function Metatags({
   return (
     <Head>
       <title>'Digitale Produktentwicklung'</title>
+      <meta name="google-site-verification" content="IQSNfLKoSA1wvqBIHNiOHP-o60hpF_3gmBFkdOt5RXw" />
       <meta charSet="utf-8" />
       <title>ambrecht.de</title>
       <link rel="shortcut icon" href="/favicon2.ico" />
