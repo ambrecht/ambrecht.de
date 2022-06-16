@@ -47,12 +47,9 @@ export default function Home() {
                   Onlinekampagne oder die spezifische Entwicklung eines
                   Vertriebskanals für ein bestimmtes Produkt.
                 </p>
-                Für kleinere Projekte übernehme ich Entwicklung und
-                Implementierung selbst, für größere Projekte füge ich mich als
-                externer Mitarbeiter und Berater in Ihr Team ein und unterstütze
-                Sie wie eine Art Mentor dabei Ihre Ziele zu erreichen. Am Ende
-                liefern Sie ein erfolgreiches digitales Produkt aus. Und ich
-                unterstützen Sie von der Markteinführung bis zur Aktualisierung.
+                Im Gegensatz zu einer klassischen Agentur habe ich kein festes
+                Team, sondern greife je nach der Anforderung des Projekts auf
+                ein verteieltes Netzwerk von etablierten Experten zurück.
               </MissionTextBox2>
             </Flexbox>
 
