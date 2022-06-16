@@ -40,5 +40,5 @@ const Background = styled.div`
   filter: hue-rotate(333deg);
   cursor: url('/cursor.svg') 9 9, auto;
   pointer-events: auto;
-  animation: ${blendIn} 5s ease-in;
+  animation: ${blendIn} 1s ease-in;
 `;
