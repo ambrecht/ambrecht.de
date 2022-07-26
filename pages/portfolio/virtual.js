@@ -13,7 +13,6 @@ const LOGIC = () => {};
 
 //MARKUP
 export default function MARKUP({ portfolio }) {
-  console.log(portfolio);
   const { Description } = portfolio.data.attributes;
   const { headline } = portfolio.data.attributes;
 

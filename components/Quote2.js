@@ -42,7 +42,7 @@ const Wrapper = styled.div`
 
 const BlockQuoteBox = styled.blockquote`
   max-width: 1000px;
-  font-size: 1em;
+  font-size: 0.6em;
   line-height: 1.4em;
   color: white;
   padding: 1em 0em 0em 5em;
@@ -53,7 +53,7 @@ const BlockQuoteBox = styled.blockquote`
   border-left: 0.05em solid white;
   ${MediaWidth}
   @media (max-width: 1300px) {
-    font-size: 0.9em;
+    font-size: 0.7em;
   }
 `;
 
@@ -113,7 +113,7 @@ const Autor = styled.p`
 const Bild = styled(Image)``;
 
 const BildCon = styled.div`
-  max-width: 200px;
+  max-width: 10vw;
   position: relative;
   float: left;
   opacity: 100%;

@@ -13,7 +13,6 @@ const LOGIC = () => {};
 
 //MARKUP
 export default function MARKUP({ portfolio }) {
-  console.log(portfolio);
   const { Description } = portfolio.data.attributes;
   const { headline } = portfolio.data.attributes;
 
@@ -49,14 +48,6 @@ export async function getStaticProps() {
 const Wrapper = styled.div`
   background-color: #293133;
   overflow: hidden;
-
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: baseline;
-  align-content: center;
-  width: 100%;
 `;
 
 const Space = styled.div`
@@ -74,6 +65,7 @@ const Text = styled.div`
   display: block;
   position: relative;
   right: 0;
+  max-width: 1300px;
 
   strong {
     ${TextGradient}
