@@ -25,6 +25,9 @@ const GlobalStyle = createGlobalStyle`
 
 
   }
+  html:focus-within {
+  scroll-behavior: smooth;
+}
 
 
 
