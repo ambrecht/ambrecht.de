@@ -47,7 +47,8 @@ export default function MARKUP({ missiontext }) {
 }
 
 export async function getStaticProps() {
-  const requestUrl = 'https://fast-tor-61669.herokuapp.com/api/artikels';
+  const requestUrl =
+    'https://fast-tor-61669.herokuapp.com/api/artikels?sort[0]=id';
 
   const response = await fetch(requestUrl);
   const data = await response.json();

@@ -49,7 +49,7 @@ export default function Home() {
                 </p>
                 Im Gegensatz zu einer klassischen Agentur habe ich kein festes
                 Team, sondern greife je nach der Anforderung des Projekts auf
-                ein verteieltes Netzwerk von etablierten Experten zurück.
+                ein verteiltes Netzwerk von etablierten Experten zurück.
               </MissionTextBox2>
             </Flexbox>
 
