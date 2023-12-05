@@ -9,7 +9,7 @@
     "@hookform/error-message": "^2.0.0",
     "@hookform/resolvers": "^2.8.8",
     "@react-three/drei": "^8.3.1",
-    "@sendgrid/mail": "^7.6.1",
+    "@sendgrid/mail": "^8.0.0",
     "@svgdotjs/svg.js": "^3.1.1",
     "drei": "^1.0.0",
     "gsap": "^3.9.1",
